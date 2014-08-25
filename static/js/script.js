@@ -17,7 +17,7 @@ $(function() {
     var $body = $(this);
 
     var ajax = $.ajax({
-      url: "/static/document-fields.json",
+      url: "../static/document-fields.json",
       dataType: "json"
     });
 
