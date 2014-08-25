@@ -1,0 +1,98 @@
+{
+	"fields": 
+	{
+		"abstract": 
+		{
+			"description": "The detailed description of a document.",
+			"type": "string"
+		},
+
+		"agencyAcronym": 
+		{
+			"description": "An abbreviation of the agency name.",
+				"could_be": "EPA",
+			"type": "string"
+		},
+
+		"agencyName": 
+		{
+			"description": "Full name of the Federal Agency.",
+			"type": "string"
+		},
+
+		"allowLateComment": 
+		{
+			"type": "boolean",
+			"description": "Some agencies will accept comments after the due date."
+		},
+
+		"attachmentCount": 
+		{
+			"description": "Number of attachments associated with a document.",
+			"type": "string"
+		},
+
+		"attachments": 
+		{
+			"description": "Additional files associated with this document",
+			"type": "array",
+			"url": "fields.html#attachments"
+		},
+
+		"cfr": 
+		{
+			"description": "A Code of Federal Regulations (CFR) Citation Number exists for each regulation referring to the rules published in the Federal Register by executive departments and agencies of the Federal Government.",
+			"type": "string"
+		},
+
+		"comment": 
+		{
+			"description": "The text of the submitter's comment.",
+			"type": "string"
+		},
+
+		"commentDueDate": 
+		{
+			"description": "Date and time when the period for the public to comment ends.",
+			"type": "date-time",
+			"url": "fields.html#commentDueDate"
+		},
+
+		"commentStartDate": 
+		{
+			"description": "Date and time when the period for the public to comment begins.",
+			"type": "date-time"
+		},
+
+		"docketId": 
+		{
+			"description": "A unique identifier established for a docket.",
+			"type": "string"
+		},
+
+		"docketType": 
+		{
+			"description": "A Docket Type is either Rulemaking or Non-Rulemaking. A Rulemaking docket includes the type of regulation that establishes a rule. While a Non-Rulemaking docket does not include a rule.",
+			"type": "string"
+		},
+
+		"documentId": 
+		{
+			"description": "A unique identifier established for a document.",
+			"type": "string"
+		},
+
+		"documentStatus": 
+		{
+			"description": "Identifies whether the document is Posted on or Withdrawn from Regulations.gov.",
+			"type": "string"
+		},
+
+		"documentSubtype": 
+		{
+			"description": "A secondary classification of a document.",
+			"type": "string",
+			"url": "documentsubtypes.html"
+		}
+	}
+}
