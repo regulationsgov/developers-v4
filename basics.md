@@ -4,13 +4,26 @@ title: API Basics
 nav: basics
 ---
 
-### API basics
+# API basics
+Two primary data models - document and docket.
+
+
+## Rate limits
+Regulations.gov relies on api.data.gov's services for rate limiting and metrics tracking.  The default rate limit of 1,000 requests per hour applies to all Regulations.gov API users.  You may contact us if you require a higher request rate.
+
+
+## Examples
+
+Return a list of all documents 
+
 
 HMDA is a GET API that lives at ```https://api.consumerfinance.gov/data/hmda```.
 
 - You can query an entire **dataset**.
 - You can query dataset **slices**, which are pre-loaded views we think are interesting.
 - You can query **concepts**, which describe types of information found in the dataset.
+
+
 
 ##### Datasets
 The endpoint for querying all data begins with ```/data/```. 
