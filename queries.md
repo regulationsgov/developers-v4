@@ -59,11 +59,12 @@ Use these clauses to filter through millions of records to get only the data you
 </tbody>
 </table>
 
-<span class="anchor" id="where"> </span>
 ##### More on $where
 
 This clause supports a mini-language for writing queries. It's a subset of SQL <code>WHERE</code> clauses, with the addition of function 
 support. A ```$where``` clause is made up of one or more comparisons, joined by boolean operators.
+
+<span class="anchor" id="where"> </span>
 
 <!--[if IE]>
 <h5>Possible comparisons</h5>
@@ -292,12 +293,14 @@ This clause takes a list of the fields you want returned, separated by commas.  
 **Wrong:** ```state_abbr AS state```, ```county```
 
 <span class="anchor" id="orderby"> </span>
+
 ##### $orderBy
 This clause determines the order of the results returned. It takes a list of columns, separated by commas, with an optional suffix of ```ASC``` or ```DESC``` to indicate that you want the data in ascending or descending order. For example, if you wanted to see loan applications ordered by gender, and age in descending order, you would use:
 
 ```$orderBy = gender, age DESC```
 
 <span class="anchor" id="group"> </span>
+
 ##### $group
 This clause lists the fields you want to group results by. For example, if you wanted to see loan applications organized by denial reason, you would use:
 
@@ -349,12 +352,6 @@ When summarizing and aggregating data, take care to know the order in which the 
 
 Then, when you want to use aggregated fields for grouping, name them according to the function you used following
 this format:
-
-```function_field_name```
-
-and
-
-```sum_number_of_owner_occupied_units```
 
 
 ##### That's everything!
