@@ -6,5 +6,5 @@ rvm:
 - rbx-2
 
 branches:
-only:
-- gh-pages
+  only:
+  - gh-pages
