@@ -5,7 +5,14 @@ nav: basics
 ---
 
 # API basics
-Two primary data models - document and docket.
+The Regulations.gov API is a GET API which has three main operations. A good place to start is with a call to the Search operation, it's endpoint is https://api.data.gov/regultions/v3/documents .  A search will return a list of Documents based on the criteria passed.  The Search operation supports keyword searches as well as navigation-style searching based on a number of available parameters.
+
+Each document returned from the search has more available details, which can be accessed by the Document API at the following endpoint: https://api.data.gov/regultions/v3/document .  Your eyes don't deceive you, that's the same as the search API, only singular form.
+
+Documents are organized into folder-like entities called Dockets.  There's an API for that too, the endpoint is: https://api.data.gov/regultions/v3/docket .
+
+## About a Document
+A Document could be a Comment, Proposed Rule, Rule, Supporting & Related, or an Other type.  Each type has it's own set of attributes, and those attributes can vary based on the Agency posting the Document, as well as if it's a Rulemaking or Non-Rulemaking Docket.
 
 
 ## Rate limits
@@ -14,40 +21,8 @@ Regulations.gov relies on api.data.gov's services for rate limiting and metrics 
 
 ## Examples
 
-Return a list of all documents 
-
-
-HMDA is a GET API that lives at ```https://api.consumerfinance.gov/data/hmda```.
-
-- You can query an entire **dataset**.
-- You can query dataset **slices**, which are pre-loaded views we think are interesting.
-- You can query **concepts**, which describe types of information found in the dataset.
-
-
-
-##### Datasets
-The endpoint for querying all data begins with ```/data/```. 
-
-| Endpoint | What it does |
-| ------------- | -------------|
-| ```/data/{dataset-name}``` | Gives all information about a dataset 
-| [```/data/hmda```](https://api.consumerfinance.gov/data/hmda) | Gives mortgage data from 2007-2012.
-
-<a href="console/#!/data/getDataset_get_1" class="action-arrow">Try it out <i class="icon-right"> </i></a>
-
-##### Concepts
-Concepts are analogous to variables, or column headers in a spreadsheet. Concepts have properties, which describe all the possible values. You can also specify concepts in any of the supported file formats like so: ```/data/{dataset-name}/{contept-name.extension}```. 
-
-<a href="console/#!/hmda/getConceptHmda_get_1" class="action-arrow">Try it out <i class="icon-right"> </i></a>
-
-##### Slices
-Think of slices as tables in a relational database. Every dataset has many slices representing different views of it, which you can use to <a href="queries.html">construct advanced queries</a>. The endpoint for
-every slice is ```/data/{dataset-name}/{slice-name}```. 
-
-You can even request a slice in HTML, XML, JSON, JSONP, or CSV. Just append the filename extension to the endpoint like so:
-```/data/{dataset-name}/{slice-name.extension}```. 
-
-<a href="console/#!/hmda/querySliceHmda_get_2" class="action-arrow"> Try it out <i class="icon-right"> </i></a>
+Return a list of all Rules and Proposed rules posted in the month of September 2014.
+http://api.data.gov/regulations/v3/documents.json?rpp=25&po=0&dct=PR%252BFR&pd=09%257C01%257C14-09%257C30%257C14&encoded=1&api_key=DEMO_KEY
 
 ##### Putting it all together
 Every year, the Federal Reserve finds interesting trends in HMDA data and publishes them in a report. Let's say you want to replicate some of their [2012 highlights](http://www.consumerfinance.gov/hmda/learn-more#highlights) in JSON. 
