@@ -1,5 +1,5 @@
 name: Developer Hub
-markdown: redcarpet
+markdown: kramdown
 #kramdown:
 #  input: GFM
 
