@@ -3,7 +3,7 @@
 {
 	"apiVersion": "3.0",
 	"swaggerVersion": "1.2",
-  	"basePath": "<%= ENV["SWAGGER_HOST"] || "http://localhost:4000" %>",
+  	"basePath": "http://{{ site.host }}:{{ site.port }}",
 	"apis": 
 	[
 		{
