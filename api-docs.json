@@ -3,7 +3,11 @@
 {
 	"apiVersion": "3.0",
 	"swaggerVersion": "1.2",
-  	"basePath": "http://{{ site.host }}:{{ site.port }}",
+{% if site.github.url %}
+  	"basePath": "{{ site.github.url }}",
+{% else %}
+	"basePath": "http://0.0.0.0:4000",
+{% endif %}
 	"apis": 
 	[
 		{
