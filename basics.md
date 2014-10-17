@@ -5,7 +5,7 @@ nav: basics
 ---
 
 # API basics
-The Regulations.gov API is a GET API which has three main operations. A good place to start is with a call to the Search operation, it's endpoint is https://api.data.gov/regultions/v3/documents .  A search will return a list of Documents based on the criteria passed.  The Search operation supports keyword searches as well as navigation-style searching based on a number of available parameters.
+The Regulations.gov API is a GET API which has three main operations. A good place to start is with a call to the Search operation, it's endpoint is https://api.data.gov/regultions/v3/documents .  A search will return a list of Documents based on the criteria passed.  The Search operation supports keyword searches as well as navigation-style searching based on a number of available parameters. 
 
 Each document returned from the search has more available details, which can be accessed by the Document API at the following endpoint: https://api.data.gov/regultions/v3/document .  Your eyes don't deceive you, that's the same as the search API, only singular form.
 
