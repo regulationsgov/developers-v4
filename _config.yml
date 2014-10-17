@@ -8,7 +8,7 @@ redcarpet:
 
 highlighter: pygments
 safe: true
-baseurl: /developer-hub
+baseurl: /developers
 exclude: ['.ruby-version', 'node_modules', 'package.json', 'bower.json']
 sass:
   sass_dir: static/_sass
