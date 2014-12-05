@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.1.1
 script: "bundle exec jekyll build"
-
+install: bundle install --job=3 --retry=3
 branches:
   only:
   - gh-pages
