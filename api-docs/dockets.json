@@ -1,0 +1,67 @@
+{
+  "swaggerVersion": "1.2",
+  "basePath": "http://api.data.gov/regulations/v3",
+  "produces": [
+    "application/json",
+    "application/xml"
+  ],
+  "resourcePath": "/api",
+  "apiVersion": "3.0",
+  "apis": [
+    {
+      "path": "/docket.{response_format}",
+      "description": "TODO: Add Docket API Description.",
+      "operations": [
+        {
+          "method": "GET",
+          "summary": "Returns Docket information",
+          "nickname": "docket",
+          "produces": [
+          	"application/json",
+          	"applicaiton/xml"
+          ],
+          "parameters": [
+            {
+              "defaultValue": "json",
+              "description": "Format",
+              "enum": [
+                "json",
+                "xml"
+              ],
+              "name": "response_format",
+              "paramType": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "defaultValue": "DEMO_KEY",
+              "description": "API Key",
+              "name": "api_key",
+              "paramType": "query",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "defaultValue": "EPA-HQ-OAR-2011-0028",
+              "description": "Docket ID",
+              "name": "docketId",
+              "paramType": "query",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responseMessages": [
+            {
+              "reason": "Account not available.",
+              "code": 403
+            },
+            {
+              "reason": "User not found.",
+              "code": 404
+            }
+          ]
+       }
+      ]
+    }
+  ]
+}

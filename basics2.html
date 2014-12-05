@@ -11,11 +11,15 @@ Each document returned from the search has more available details, which can be 
 
 A current regulation getting a lot of activity:
 
-{% highlight json %}
+```javascript
 {
   "allowLateComment": false,
   "commentDueDate": "2014-12-01T23:59:59-05:00",
   "commentStartDate": "2014-06-18T00:00:00-04:00",
+  "fileFormats": [
+    "https://api.data.gov/regulations/v3/download?documentId=EPA-HQ-OAR-2013-0602-0001&contentType=pdf",
+    "https://api.data.gov/regulations/v3/download?documentId=EPA-HQ-OAR-2013-0602-0001&contentType=html"
+  ],
   "openForComment": true,
   "postedDate": "2014-06-18T00:00:00-04:00",
   "receivedDate": "2014-06-18T00:00:00-04:00",
@@ -100,7 +104,7 @@ A current regulation getting a lot of activity:
     "value": "1207401"
   }
 }
-{% endhighlight %}
+```
 
 Documents are organized into folder-like entities called Dockets.  There's an API for that too, the endpoint is: https://api.data.gov/regultions/v3/docket.
 

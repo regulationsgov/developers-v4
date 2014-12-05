@@ -41,21 +41,13 @@ title: Interactive API Console
       url: "{{ site.baseurl }}/api-docs.json",
       dom_id: "swagger-ui-container",
       supportedSubmitMethods: ['get', 'post', 'put', 'delete'],
-      onComplete: function(swaggerApi, swaggerUi){
-        if(console) {
-          console.log("Loaded SwaggerUI")
-        }
-        $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
-        $onload = Docs.toggleEndpointListForResource('data');
-        $onload = Docs.toggleEndpointListForResource('hmda');
-      },
       onFailure: function(data) {
         if(console) {
           console.log("Unable to Load SwaggerUI");
           console.log(data);
         }
       },
-      docExpansion: "none"
+      docExpansion: "list"
     });
 
     $('#input_apiKey').change(function() {
@@ -72,15 +64,6 @@ title: Interactive API Console
 </head>
 
 <body id="console">
-  <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MVLMCF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MVLMCF');</script>
-<!-- End Google Tag Manager -->
   <header class="header cf" role="banner">
       {% include header.html %}
   </header>
@@ -97,7 +80,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <h3 id='api_calls'>{{ page.title }}</h3>
 
 <p>Explore the API here hands-on. Need a little help? Read our <a href="../basics.html">API basics</a> to learn about 
-  datasets, concepts, and slices.
+  ~~datasets, concepts, and slices.~~
 
 <div id="message-bar" class="swagger-ui-wrap">
 </div>
@@ -109,7 +92,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <h5 id='ready_to_dive_deeper'>Ready to dive deeper?</h5>
 
-<p>See all functions and enumerations in <a href="../queries.html">Query language</a>, or look up all the variables and values found in LAR data at <a href="../fields.html">Field reference</a>. To learn more about what LAR data is and how it is collected, <a href="http://consumerfinance.gov/hmda/learn-more">visit our HMDA website</a>. 
+<p>You can find detailed descriptions of each type of modeled data, including each field in the <a href="../fields.html">Field reference</a>.
     </section>
 
     </div>
