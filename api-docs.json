@@ -7,7 +7,7 @@
 {% if site.github %}
 	"basePath": "{{ site.github.url }}/api-docs/",
 {% else %}
-    "basePath": "http://localhost:4000/api-docs/",
+    "basePath": "http://localhost:4000{{ site.baseurl }}/api-docs/",
 {% endif %}
 	"apis": 
 	[
