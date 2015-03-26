@@ -2,10 +2,11 @@
 layout: default
 title: Contribute
 nav: contribute
+permalink: /contribute/
 ---
-### Open source contributing
+# Open Source Contributing
 
-The project is in the public domain, and we encourage you to [contribute to it on GitHub](http://github.com/[agency]/[repo]) by improving on it or making your own apps and tools using [Agency]'s data.
+The project is in the public domain, and we encourage you to [contribute to it on GitHub](http://github.com/[agency]/[repo]). Feel free to suggest improvements or make your own apps and tools using the Regulations.gov data.
 
 ##### Check out the repo
 

@@ -2,7 +2,10 @@
 layout: default
 title: Request an API Key
 nav: key
+permalink: '/key/'
 ---
+
+# API Key
 
 {% raw %}
 <div id="apidatagov_signup">Loading signup form...</div>
