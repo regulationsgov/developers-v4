@@ -5,19 +5,12 @@ tags:
 layout: post
 ---
 
-Due to popular demand, we have introduced a new parameter which can be used to filter records modified within X number of days. The new daysSinceModified parameter works for both a day value as well as a date range.
-
-If a user appends daysSinceModified=X to the url where x is a number, the API will search for records modified in the last X days including today.
+Due to popular demand, we have introduced a new parameter which can be used to filter records modified within X number of days. If a user appends daysSinceModified=X to the url where X is a number, the API will search for records modified in the last X days including today.
 
 To get everything modified today, use the following:
 > /documents.json?daysSinceModified=0
 
 Documents modified since yesterday (including today) can be found using:
 > /documents.json?daysSinceModified=1
-
-Similarly, if a user appends daysSinceModified=x-y to the url,  our API will run a search for records modified between X and Y.
-
-If you want to get everything that was modified last week (September 14-20, 2014), not inclusive of any modifcations after:
-> /documents.json?daysSinceModified=2014-09-14-2014-09-20
 
 This parameter should help API users who query our API on a daily basis to keep their data updated.  Prior to this enhancement, users had to pull all records to get data modified recently.  Now using this parameter, they will be able to filter out records they already store.
