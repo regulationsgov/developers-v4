@@ -9,7 +9,7 @@ The Regulations.gov documents API is built on the same features as the Regulatio
 
 The new 'searchProperty' parameter will allows API users to limit their search to only the field specified. This will help prevent the return of unwanted results when the keyword matches the content or another property. The following properties are currently enabled for this feature: documentId, docketId, trackingNumber, rin, and federalRegisterNumber.
 
-In order to use this new parameter, you must also include the keyword parameter "s=".
+In order to use this new parameter, you must also include the keyword parameter "s=" in addition to the "searchProperty" parameter.
 
 To find a user's comment by the tracking number you would use the following:
 
