@@ -3,7 +3,7 @@ published: true
 layout: default
 title: Overview
 nav: overview
-permalink: /index/
+permalink: /
 ---
 
 # {{ page.title }}
@@ -13,10 +13,10 @@ When Congress passes laws, federal agencies implement those laws through regulat
 ##### Get started
 We built the API to be as self-documenting as possible, but if you find yourself overwhelmed, we organized this site into four major areas.
 
-- [API basics](basics.html) introduces you to the operations offered by the API.
-- [API calls](console/) gives you a hands-on experience of those operations with an interactive console.
+- [API Basics](basics/) introduces you to the operations offered by the API.
+- [API Calls](console/) gives you a hands-on experience of those operations with an interactive console.
 - [Field reference](fields.html) lists and describes the type of information returned by the API.
 
 <body id="overview"></body>
 
-~~Not interested in programming? You can still get the data! Visit the [explore the data](URL_of_data).~~
+Not interested in programming? You can still get the data! Visit the [explore the data](URL_of_data).
