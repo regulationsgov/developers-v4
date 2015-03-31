@@ -2,12 +2,13 @@
 layout: default
 title: API Basics
 nav: basics
+permalink: /basics/
 ---
 
-# API basics
-The Regulations.gov API is a GET API which has three main operations. A good place to start is with a call to the Search operation, it's endpoint is https://api.data.gov/regultions/v3/documents.  A search will return a list of Documents based on the criteria passed.  The Search operation supports keyword searches as well as navigation-style searching based on a number of available parameters. 
+# API Basics
+The Regulations.gov API is a GET API which has three main operations: Document, Documents, and Docket. A good place to start is with a call to the Search operation, it's endpoint is https://api.data.gov/regultions/v3/documents. A search will return a list of Documents based on the criteria passed. The Search operation supports keyword searches as well as navigation-style searching based on a number of available parameters. 
 
-Each document returned from the search has more available details, which can be accessed by the Document API at the following endpoint: https://api.data.gov/regultions/v3/document.  Your eyes don't deceive you, that's the same as the search API, only singular form.
+Each document returned by a search has more details available, which can be accessed by the Document API at the following endpoint: https://api.data.gov/regulations/v3/document. Your eyes don't deceive you, that's the same as the search API, only in singular form.
 
 A current regulation getting a lot of activity:
 
@@ -102,15 +103,13 @@ A current regulation getting a lot of activity:
 }
 {% endhighlight %}
 
-Documents are organized into folder-like entities called Dockets.  There's an API for that too, the endpoint is: https://api.data.gov/regultions/v3/docket.
+Documents are organized into folders called Dockets. There's an API for that too, the endpoint is: https://api.data.gov/regultions/v3/docket.
 
-## About a Document
-A Document could be a Comment, Proposed Rule, Rule, Supporting & Related, or an Other type.  Each type has it's own set of attributes, and those attributes can vary based on the Agency posting the Document, as well as if it's a Rulemaking or Non-Rulemaking Docket.
-
+## More Document Information
+A Document could be a Comment, Proposed Rule, Rule, Supporting & Related, or an Other type. Each type has it's own set of attributes, and those attributes can vary based on the Agency posting the Document, as well as if it's a Rulemaking or Non-Rulemaking Docket.
 
 ## Rate limits
-Regulations.gov relies on api.data.gov's services for rate limiting and metrics tracking.  The default rate limit of 1,000 requests per hour applies to all Regulations.gov API users.  You may contact us if you require a higher request rate.
-
+Regulations.gov relies on api.data.gov's services for rate limiting and metrics tracking. The default rate limit of 1,000 requests per hour applies to all Regulations.gov API users. You may contact us if you require a higher request rate.
 
 ## Examples
 
