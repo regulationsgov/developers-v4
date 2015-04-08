@@ -6,7 +6,7 @@ permalink: /contribute/
 ---
 # Open Source Contributing
 
-The project is in the public domain, and we encourage you to [contribute to it on GitHub](https://github.com/regulationsgov/developers/). Feel free to suggest improvements or make your own apps and tools using [{{ page.regs-name }}](http://regulations.gov) data.
+The project is in the public domain, and we encourage you to [contribute to it on GitHub]({{page.regs-dev-url}}). Feel free to suggest improvements or make your own apps and tools using [{{ page.regs-name }}]({{page.regs-url}}) data.
 
 ##### Check out the repo
 
