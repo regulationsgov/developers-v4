@@ -22,10 +22,9 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      regs-name: "Regulations.gov"
-      regs-url: "http://regulations.gov"
-      regs-email: user@agency.gov
-      regs-system: "Regulations"
-      regs-dev-url: "https://github.com/regulationsgov/developers/"
+      organization-name: "Regulations.gov"
+      organization-url: "http://regulations.gov"
+      organization-email: user@agency.gov
+      organization-system: "Regulations"
       site-name: /developers
       source-code-policy.url: 

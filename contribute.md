@@ -6,7 +6,7 @@ permalink: /contribute/
 ---
 # Open Source Contributing
 
-The project is in the public domain, and we encourage you to [contribute to it on GitHub]({{page.regs-dev-url}}). Feel free to suggest improvements or make your own apps and tools using [{{ page.regs-name }}]({{page.regs-url}}) data.
+The project is in the public domain, and we encourage you to [contribute to it on GitHub]({{site.github.repository_url}}). Feel free to suggest improvements or make your own apps and tools using [{{ page.organization-name }}]({{page.organization-url}}) data.
 
 ##### Check out the repo
 
@@ -17,7 +17,7 @@ The project is in the public domain, and we encourage you to [contribute to it o
     </p>
   </li>
   <li>
-    <a href="{{page.regs-dev-url}}">
+    <a href="{{site.github.repository_url}}">
       <h4>[developers]</h4>
       <p>The open source software that runs the platform</p>
     </a>
