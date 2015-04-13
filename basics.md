@@ -6,9 +6,22 @@ permalink: /basics/
 ---
 
 # API Basics
-The Regulations.gov API is a GET API which has three main operations: Document, Documents, and Docket. A good place to start is with a call to the Search operation, it's endpoint is https://api.data.gov/regultions/v3/documents. A search will return a list of Documents based on the criteria passed. The Search operation supports keyword searches as well as navigation-style searching based on a number of available parameters. 
+The Regulations.gov API is a GET API with three main operations: Document, Documents, and Docket. These three operations can be used to search for a single document, a list of documents, or dockets. In order to use these, you must also obtain an API Key by [signing up](/key).
 
-Each document returned by a search has more details available, which can be accessed by the Document API at the following endpoint: https://api.data.gov/regulations/v3/document. Your eyes don't deceive you, that's the same as the search API, only in singular form.
+#### Searching for documents
+You can search for a list of documents by using the endpoint https://api.data.gov/regulations/v3/documents. A search will return a list of documents based on the criteria passed. The search operation supports keyword searches as well as navigation-style searching based on a number of available parameters.
+
+#### Searching for a document
+In order to obtain more details about a single document, you can use the endpoint https://api.data.gov/regulations/v3/document. A document could be any of the following types: Comment; Proprosed Rule; Rule; Supporting & Related; or Other. Each type has it's own set of attributes and those attributes can vary based on the Agency posting the document, as well if it's a Rulemaking or Non-Rulemaking Docket.
+
+#### Searching for a docket
+A docket is an organizational folder containing multiple documents. Dockets can be searched using the endpoint: https://api.data.gov/regulations/v3/docket.
+
+#### Rate limits
+Regulations.gov relies on api.data.gov's services for rate limiting and metrics tracking. The default rate limit of 1,000 requests per hour applies to all Regulations.gov API users. You may contact us if you require a higher request rate.
+
+#### Examples
+Return a list of all Rules and Proposed rules posted in the month of September 2014 using this example [API Call](http://api.data.gov/regulations/v3/documents.json?rpp=25&po=0&dct=PR%252BFR&pd=09%257C01%257C14-09%257C30%257C14&encoded=1&api_key=DEMO_KEY).
 
 A current regulation getting a lot of activity:
 
@@ -102,18 +115,5 @@ A current regulation getting a lot of activity:
   }
 }
 {% endhighlight %}
-
-Documents are organized into folders called Dockets. There's an API for that too, the endpoint is: https://api.data.gov/regultions/v3/docket.
-
-## More Document Information
-A Document could be a Comment, Proposed Rule, Rule, Supporting & Related, or an Other type. Each type has it's own set of attributes, and those attributes can vary based on the Agency posting the Document, as well as if it's a Rulemaking or Non-Rulemaking Docket.
-
-## Rate limits
-Regulations.gov relies on api.data.gov's services for rate limiting and metrics tracking. The default rate limit of 1,000 requests per hour applies to all Regulations.gov API users. You may contact us if you require a higher request rate.
-
-## Examples
-
-Return a list of all Rules and Proposed rules posted in the month of September 2014.
-http://api.data.gov/regulations/v3/documents.json?rpp=25&po=0&dct=PR%252BFR&pd=09%257C01%257C14-09%257C30%257C14&encoded=1&api_key=DEMO_KEY
 
 <body id="basics"></body>
