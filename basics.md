@@ -4,8 +4,6 @@ title: API Basics
 nav: basics
 permalink: /basics/
 ---
-
-# API Basics
 The Regulations.gov API is a GET API with three main operations: Document, Documents, and Docket. These three operations can be used to search for a single document, a list of documents, or dockets. In order to use these, you must also obtain an API Key by [signing up](/key).
 
 #### Searching for documents
