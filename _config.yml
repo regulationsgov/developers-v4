@@ -26,5 +26,6 @@ defaults:
       organization-url: "http://regulations.gov"
       organization-email: user@agency.gov
       organization-system: "Regulations"
+      site-title: "REGS"
       site-name: /developers
       source-code-policy.url: 
