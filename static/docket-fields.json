@@ -46,7 +46,7 @@
 		"type": 
 		{
 			"type": "string",
-			"description": "Docket Type (Rulemaking or Non-Rulemaking)"
+			"description": "Docket Type (Rulemaking or Nonrulemaking)"
 		},
 
 		"cfrCitation": 

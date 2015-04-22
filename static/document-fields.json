@@ -72,7 +72,7 @@
 
 		"docketType": 
 		{
-			"description": "A Docket Type is either Rulemaking or Non-Rulemaking. A Rulemaking docket includes the type of regulation that establishes a rule. While a Non-Rulemaking docket does not include a rule.",
+			"description": "A Docket Type is either Rulemaking or Nonrulemaking. A Rulemaking docket includes the type of regulation that establishes a rule. While a Nonrulemaking docket does not include a rule.",
 			"type": "string"
 		},
 
