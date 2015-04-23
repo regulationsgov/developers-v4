@@ -4,8 +4,6 @@ title: Contribute
 nav: contribute
 permalink: /contribute/
 ---
-# Open Source Contributing
-
 The project is in the public domain, and we encourage you to [contribute to it on GitHub]({{site.github.repository_url}}). Feel free to suggest improvements or make your own apps and tools using [{{ page.organization-name }}]({{page.organization-url}}) data.
 
 ##### Check out the repo

@@ -4,9 +4,7 @@ title: API Basics
 nav: basics
 permalink: /basics/
 ---
-
-# API Basics
-The Regulations.gov API is a GET API with three main operations: Document, Documents, and Docket. These three operations can be used to search for a single document, a list of documents, or dockets. In order to use these, you must also obtain an API Key by [signing up](/key).
+The Regulations.gov API is a GET API with three main operations: Document, Documents, and Docket. These three operations can be used to search for a single document, a list of documents, or dockets. In order to use these, you must also obtain an API Key by [signing up]({{page.baseurl}}/key/).
 
 #### Searching for documents
 You can search for a list of documents by using the endpoint https://api.data.gov/regulations/v3/documents. A search will return a list of documents based on the criteria passed. The search operation supports keyword searches as well as navigation-style searching based on a number of available parameters.
@@ -21,7 +19,7 @@ A docket is an organizational folder containing multiple documents. Dockets can 
 Regulations.gov relies on api.data.gov's services for rate limiting and metrics tracking. The default rate limit of 1,000 requests per hour applies to all Regulations.gov API users. You may contact us if you require a higher request rate.
 
 #### Examples
-Return a list of all Rules and Proposed rules posted in the month of September 2014 using this example [API Call](http://api.data.gov/regulations/v3/documents.json?rpp=25&po=0&dct=PR%252BFR&pd=09%257C01%257C14-09%257C30%257C14&encoded=1&api_key=DEMO_KEY).
+Return a list of all Rules and Proposed Rules posted in the month of September 2014 using this example [API Call](http://api.data.gov/regulations/v3/documents.json?rpp=25&po=0&dct=PR%252BFR&pd=09%257C01%257C14-09%257C30%257C14&encoded=1&api_key=DEMO_KEY).
 
 A current regulation getting a lot of activity:
 
@@ -59,7 +57,7 @@ A current regulation getting a lot of activity:
   },
   "documentType": {
     "label": "Document Type",
-    "value": "Proposed Rule"
+    "value": "Proposed Rules"
   },
   "frCitation": {
     "label": "FR Citation",

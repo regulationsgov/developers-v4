@@ -52,11 +52,11 @@
           ],
           "responseMessages": [
             {
-              "reason": "Account not available.",
+              "message": "Account not available.",
               "code": 403
             },
             {
-              "reason": "User not found.",
+              "message": "User not found.",
               "code": 404
             }
           ]
