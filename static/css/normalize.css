@@ -23,6 +23,10 @@ summary {
     display: block;
 }
 
+side {
+  min-width: 15em;
+  }
+
 /**
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
@@ -125,12 +129,12 @@ a:hover {
 
 h1 {
     font-size: 2em;
-    margin: 0.67em 0;
+    margin: 1em 0;
 }
 
 h2 {
     font-size: 1.5em;
-    margin: 0.83em 0;
+    margin: 1em 0;
 }
 
 h3 {
@@ -140,17 +144,17 @@ h3 {
 
 h4 {
     font-size: 1em;
-    margin: 1.33em 0;
+    margin: 1em 0;
 }
 
 h5 {
     font-size: 0.83em;
-    margin: 1.67em 0;
+    margin: 1em 0;
 }
 
 h6 {
     font-size: 0.67em;
-    margin: 2.33em 0;
+    margin: 1em 0;
 }
 
 /**
