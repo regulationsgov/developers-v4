@@ -7,10 +7,15 @@ permalink: /terms/
 
 Regulations.gov offers its public data in machine readable format via an Application Programming Interface ("API"). This service is offered subject to your acceptance of the terms and conditions contained herein as well as any relevant sections of the Regulations.gov website Privacy and Security Notice and the User Notice (collectively, the "Agreement").
 
-##### Scope
+#### Scope
 All of the content, documentation, code, and related materials made available to you through Regulations.gov is subject to these terms. Access to or use of Regulations.gov services or its content constitutes acceptance to this Agreement.
 
-##### Use
+
+
+
+
+
+#### Use
 You may use any Regulations.gov API to develop a service to search, display, analyze, retrieve, view, and otherwise obtain information from Regulations.gov data.
 
 - The API can be used on demand, or the content can be queried and pulled into a separate database managed by an organization with an account ID.
