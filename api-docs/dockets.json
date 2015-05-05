@@ -52,11 +52,19 @@
           ],
           "responseMessages": [
             {
-              "message": "Account not available.",
-              "code": 403
+              "message": "Bad request. The request is in the wrong format.",
+              "code": 400
             },
             {
-              "message": "User not found.",
+              "message": "Bad request. The content is either empty or has been withdrawn.",
+              "code": 400
+            },
+            {
+              "message": "Not found",
+              "code": 404
+            },
+            {
+              "message": "File not found.",
               "code": 404
             }
           ]

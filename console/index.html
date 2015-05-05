@@ -7,17 +7,16 @@ title: Interactive API
     <title>{{page.title}} - {{page.organization-name}} API</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href="{{ site.baseurl }}/static/css/normalize.css" rel="stylesheet" type="text/css">
-    
-    <link href="css/highlight.default.css" rel="stylesheet" type="text/css" media="screen"/>
-    <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="{{site.baseurl}}/static/css/normalize.css" rle="stylesheet" type="text/css">
+    <link href="{{site.baseurl}}/static/css/highlight.default.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="{{site.baseurl}}/static/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="{{ site.baseurl }}/static/css/style.css" rel="stylesheet" type="text/css"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--[if IE]>
-    <link rel="stylesheet" href="css/for-ie-only.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/static/css/for-ie-only.css">
     <![endif]-->
 
     <!--[if lt IE 9]>
@@ -70,7 +69,7 @@ title: Interactive API
 
     <div class="wrap">
       <div class="content">
-        <aside style="width:250px">
+        <aside>
           {% include nav.html %}
         </aside>
         <section class="main-content" role="main">

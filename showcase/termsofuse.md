@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Terms of Use
-nav: termsofuse
+nav: terms
 permalink: /terms/
 ---
 
@@ -9,6 +9,11 @@ Regulations.gov offers its public data in machine readable format via an Applica
 
 #### Scope
 All of the content, documentation, code, and related materials made available to you through Regulations.gov is subject to these terms. Access to or use of Regulations.gov services or its content constitutes acceptance to this Agreement.
+
+
+
+
+
 
 #### Use
 You may use any Regulations.gov API to develop a service to search, display, analyze, retrieve, view, and otherwise obtain information from Regulations.gov data.
