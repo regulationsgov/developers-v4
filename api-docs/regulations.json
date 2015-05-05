@@ -390,7 +390,7 @@
               "code": 200
             },
             {
-              "reason": "User not found.",
+              "message": "User not found.",
               "code": 404
             }
           ]

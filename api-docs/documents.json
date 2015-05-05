@@ -273,11 +273,27 @@
           ],
           "responseMessages": [
             {
-              "reason": "Account not available.",
-              "code": 403
+              "message": "Bad request. The request is in the wrong format.",
+              "code": 400
             },
             {
-              "reason": "User not found.",
+              "message": "Bad request. The request exceeds the records per page limit.",
+              "code": 400
+            },
+            {
+              "message": "Bad request. The content is either empty or has been withdrawn.",
+              "code": 400
+            },
+            {
+              "message": "Bad request. The document is only available for comment via Regulations.gov.",
+              "code": 400
+            },
+            {
+              "message": "Not found",
+              "code": 404
+            },
+            {
+              "message": "File not found.",
               "code": 404
             }
           ]
@@ -331,11 +347,23 @@
           ],
           "responseMessages": [
             {
-              "message": "Success",
-              "code": 200
+              "message": "Bad request. The request is in the wrong format.",
+              "code": 400
             },
             {
-              "reason": "User not found.",
+              "message": "Bad request. The content is either empty or has been withdrawn.",
+              "code": 400
+            },
+            {
+              "message": "Bad request. The document is only available for comment via Regulations.gov.",
+              "code": 400
+            },
+            {
+              "message": "Not found",
+              "code": 404
+            },
+            {
+              "message": "File not found.",
               "code": 404
             }
           ]

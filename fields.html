@@ -4,25 +4,11 @@ title: Field References
 nav: fields
 permalink: /fields/
 script: >
-    addFieldTable('static/document-fields.json','document-fields');
-    addFieldTable('static/docket-fields.json','docket-fields');
+    addFieldTable('../static/document-fields.json','document-fields');
+    addFieldTable('../static/docket-fields.json','docket-fields');
 ---
-
-<h1>Field References</h1>
-
-<p>Why so many rows and fields? Don't be alarmed, there's a lot of information in [System] data 
-but you can make your queries as basic or as detailed as you want.</p>
-
-<p>Use this page as a cheat sheet when you are ready to add color to some basic queries. You can 
-also skim this table to get an idea of the kinds of information you can find in these records.</p> 
-
-<p>If you are new to [System] data, that's not a problem. <a href="URL_of_Video">Watch this video</a> to get started, and then <a href="URL_of_More_data">check out these resources</a> to learn about the nitty gritty details of the data.<p>
-
-<div class="mobile-warning">
-
-              <i class="icon-error-alt"></i> We recommend viewing this table in landscape mode on your mobile device.
-
-            </div>
+<p>The following fields will help you explore {{page.organization-system}} data. This page contains all of the information you need to tailor your queries.</p>
+<div class="mobile-warning"><i class="icon-error-alt"></i> We recommend viewing this table in landscape mode on your mobile device.</div>
 <h3>Document Fields</h3>
 <table id="document-fields" class="field-table">
 	<colgroup>
@@ -42,7 +28,6 @@ also skim this table to get an idea of the kinds of information you can find in 
 <tbody>
 </tbody>
 </table>
-
 <h3>Docket Fields</h3>
 <table id="docket-fields" class="field-table">
 	<colgroup>
@@ -62,6 +47,5 @@ also skim this table to get an idea of the kinds of information you can find in 
 <tbody>
 </tbody>
 </table>
-
 <body id="fields">
 </body>
