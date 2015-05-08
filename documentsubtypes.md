@@ -7,7 +7,7 @@ nav: fields
 
 # {{ page.title }}
 {{ page.data.summary }}
-
+<p>Document Subtypes vary by Agency, each Agency having it's own set of values.  This listing is for convenience to help users get the URI Escaped value, which will be needed for your request.</p>
 <table>
 <thead>
 <th>Subtype Name</th>
