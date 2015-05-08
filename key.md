@@ -12,7 +12,9 @@ permalink: '/key/'
   var apiUmbrellaSignupOptions = {
     registrationSource: 'regulations',
     apiKey: 'sxPWKJYXAGaMKMYLU0sAg0wAz4N0PkWxjNj84fAK',
-    exampleApiUrl: 'https://api.data.gov/regulations/v3/documents?api_key={{api_key}}&rpp=25&po=0&dct=PR%252BFR&pd=09%257C01%257C14-09%257C30%257C14&encoded=1'
+    exampleApiUrl: 'https://api.data.gov/regulations/v3/documents?api_key={{api_key}}&rpp=25&po=0&dct=PR%252BFR&pd=09%257C01%257C14-09%257C30%257C14&encoded=1',
+    verifyEmail: true,
+    websiteInput: true
   };
 
   /* * * DON'T EDIT BELOW THIS LINE * * */
