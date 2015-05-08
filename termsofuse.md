@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Terms of Use
-nav: termsofuse
+nav: terms
 permalink: /terms/
 ---
 
