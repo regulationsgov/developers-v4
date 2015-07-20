@@ -35,8 +35,7 @@
 		"attachments": 
 		{
 			"description": "Additional files associated with this document",
-			"type": "array",
-			"url": "fields.html#attachments"
+			"type": "array"
 		},
 
 		"cfr": 
@@ -54,8 +53,7 @@
 		"commentDueDate": 
 		{
 			"description": "Date and time when the period for the public to comment ends.",
-			"type": "date-time",
-			"url": "fields.html#commentDueDate"
+			"type": "date-time"
 		},
 
 		"commentStartDate": 
@@ -91,8 +89,7 @@
 		"documentSubtype": 
 		{
 			"description": "A secondary classification of a document.",
-			"type": "string",
-			"url": "documentsubtypes.html"
+			"type": "string"
 		},
         "documentType": {
           "description": "A primary classification of a document.",
