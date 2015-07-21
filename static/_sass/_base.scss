@@ -720,13 +720,13 @@ footer a:hover {
 }
 
 @media screen and (min-width: 50em) and (min-height: 50em) {
-    /* Only fix sidebar position if the screen has enough height (800px) */
+    /* Only fix sidebar position if the screen has enough width (800px) */
     aside {
         position: fixed;
     }
 }
 
-@media screen and (min-width: 50em) and (min-height: 32.5em) {
+@media screen and (min-width: 50em) {
 
     /* LAYOUT */
 
@@ -778,7 +778,7 @@ footer a:hover {
 
 
 /* TABLET/NETBOOK 744px */
-@media only screen and (min-width: 46.5em) {
+@media only screen and (min-width: 50em) {
     nav {
         text-align: left;
     } 
@@ -789,7 +789,7 @@ footer a:hover {
 
     aside {
         margin-top: 5em;
-        width: 13em;
+        width: 13.75em;
         position: fixed;
     }
 
@@ -814,7 +814,7 @@ footer a:hover {
 /* LANDSCAPE TABLET/NETBOOK/LAPTOP (1024PX) */
 /* full header design */
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 50em) {
     aside {
         margin-top: 6.25em;
         width: 13.75em;
@@ -849,7 +849,7 @@ footer a:hover {
 } 
 
 
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 75em) {
 
 }
 /* DESKTOP 
@@ -857,7 +857,7 @@ footer a:hover {
 
 /*    W I D E S C R E E N    */
 /* Increased body size for legibility */
-@media only screen and (min-width: 87.5em) {
+@media only screen and (min-width: 75em) {
     body {
         
     }
