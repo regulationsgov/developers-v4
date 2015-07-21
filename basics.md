@@ -7,10 +7,10 @@ permalink: /basics/
 Regulations.gov offers a GET API with three main operations: Document, Documents, and Docket. These operations can be used to search for a single document, a list of documents, or dockets. To begin, you must obtain an [API Key]({{site.baseurl}}/key/).
 
 #### Searching for documents
-You can search for a list of documents based on the criteria passed by using the endpoint https://api.data.gov/regulations/v3/documents. The search operation supports keyword searches as well as navigation-style searching based on a number of available parameters. 
+You can search for a list of documents based on the criteria passed by using the endpoint ```https://api.data.gov/regulations/v3/documents```. The search operation supports keyword searches as well as navigation-style searching based on a number of available parameters. 
 
 #### Searching for a document
-In order to obtain more details about a single document, you can use the endpoint https://api.data.gov/regulations/v3/document. A document is defined by one of the following types: Comment, Proposed Rule, Rule, Supporting & Related, or Other. Each document type has its own set of attributes, which vary based on the Agency posting the document. Another defining characteristic is if the document is part of a Rulemaking or Nonrulemaking Docket. 
+In order to obtain more details about a single document, you can use the endpoint ```https://api.data.gov/regulations/v3/document```. A document is defined by one of the following types: Comment, Proposed Rule, Rule, Supporting & Related, or Other. Each document type has its own set of attributes, which vary based on the Agency posting the document. Another defining characteristic is if the document is part of a Rulemaking or Nonrulemaking Docket. 
 
 #### Searching for a docket
 A docket is an organizational folder containing multiple documents. Dockets can be searched using the endpoint: https://api.data.gov/regulations/v3/docket.
