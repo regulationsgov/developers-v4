@@ -21,7 +21,7 @@ Regulations.gov relies on api.data.gov's services for rate limiting and metrics 
 #### Examples
 Return a list of all Rules and Proposed Rules posted in the month of September 2014 using this example [API Call](http://api.data.gov/regulations/v3/documents.json?rpp=25&po=0&dct=PR%252BFR&pd=09%257C01%257C14-09%257C30%257C14&encoded=1&api_key=DEMO_KEY).
 
-A current regulation getting a lot of activity:
+An example regulation showcasing various different fields:
 
 {% highlight json %}
 {
