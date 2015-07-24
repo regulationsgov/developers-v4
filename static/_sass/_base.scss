@@ -117,8 +117,8 @@ p  {
 ul, blockquote, pre, td, th, label {
     margin: 0;
     font-size: 1em;
-    line-height: 1.57142857142857em;
-    margin-bottom: 1.375em;
+    line-height: 1.25em;
+    margin-bottom: 1em;
 }
 
 ol {
@@ -713,20 +713,20 @@ footer a:hover {
 
 /* DESKTOP STYLES 640px */
 
-@media only screen and (min-width: 40em) and (min-height: 56.25em) {
+@media only screen and (min-width: 40em) and (min-height: 43.75em) {
     body {
         padding-bottom: 12em;
     }
 }
 
-@media screen and (min-width: 50em) and (min-height: 56.25em) {
+@media screen and (min-width: 50em) and (min-height: 43.75em) {
     /* Only fix sidebar position if the screen has enough width (800px) */
     aside {
         position: fixed;
     }
 }
 
-@media screen and (min-width: 50em) and (min-height: 56.25em) {
+@media screen and (min-width: 50em) and (min-height: 43.75em) {
 
     /* LAYOUT */
 
@@ -778,7 +778,7 @@ footer a:hover {
 
 
 /* TABLET/NETBOOK 744px */
-@media only screen and (min-width: 50em) and (min-height: 56.25em) {
+@media only screen and (min-width: 50em) and (min-height: 43.75em) {
     nav {
         text-align: left;
     } 
@@ -814,7 +814,7 @@ footer a:hover {
 /* LANDSCAPE TABLET/NETBOOK/LAPTOP (1024PX) */
 /* full header design */
 
-@media only screen and (min-width: 50em) and (min-height: 56.25em) {
+@media only screen and (min-width: 50em) and (min-height: 43.75em) {
     aside {
         margin-top: 6.25em;
         width: 13.75em;
@@ -849,7 +849,7 @@ footer a:hover {
 } 
 
 
-@media only screen and (min-width: 75em) and (min-height: 56.25em) {
+@media only screen and (min-width: 75em) and (min-height: 43.75em) {
 
 }
 /* DESKTOP 
@@ -857,7 +857,7 @@ footer a:hover {
 
 /*    W I D E S C R E E N    */
 /* Increased body size for legibility */
-@media only screen and (min-width: 75em) and (min-height: 56.25em) {
+@media only screen and (min-width: 75em) and (min-height: 43.75em) {
     body {
         
     }
