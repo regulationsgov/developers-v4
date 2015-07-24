@@ -16,7 +16,7 @@
           "summary": "Search for Documents",
           "method": "GET",
           "nickname": "documents",
-          "notes": "This API allows users to build a query based on any of the parameters below.  If you have trouble building queries, you may wish to try them through the <a href=\"http://www.regulations.gov/#!advancedSearch\">Advanced Search</a> page on the Regulations.gov website. The parameters in the browser address can be translated to the API by converting the semicolons to ampersands and appending the 'encoded=1' parameter to your API parameters. ",
+          "notes": "This API allows users to build a query based on any of the parameters below.  If you have trouble building queries, you may wish to try them through the <a href=\"http://www.regulations.gov/#!advancedSearch\">Advanced Search</a> page on the Regulations.gov website.",
           "parameters": [
             {
               "defaultValue": "json",
@@ -50,7 +50,7 @@
               "type": "integer"
             },
             {
-              "description": "Encoded: <ul><li>1 (will accept Regulations.gov style encoded parameters)</li><li>0 (will not accept such encoded parameters)</li></ul>  * See Implementation Notes section for more information on how to use this parameter.",
+              "description": "Encoded: <ul><li>1 (will accept Regulations.gov style encoded parameters)</li><li>0 (will not accept such encoded parameters)</li></ul>",
               "enum": [
                 0,
                 1
@@ -175,7 +175,7 @@
               "type": "date"
             },
             {
-              "description": "Comment Period End Date: Enter a date in the form of MM/DD/YY. Note: If the Comment Period Start Date is also provided, then ensure the Comment Period End date is after. ** Comment Period Start and End Dates are mutually exclusive with the 'closing soon' parameter. If both are provided, 'closing soon' will be ignored.",
+              "description": "Comment Period End Date: Enter a date in the form of MM/DD/YY. Note: If the Comment Period Start Date is also provided, then ensure the Comment Period End date is after.<br/>* Comment Period Start and End Dates are mutually exclusive with the 'closing soon' parameter. If both are provided, 'closing soon' will be ignored.",
               "name": "cmd",
               "paramType": "query",
               "required": false,
