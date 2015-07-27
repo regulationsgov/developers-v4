@@ -114,7 +114,7 @@
 		"agendaStageOfRulemaking": 
 		{
 			"type": "string",
-			"description": "Each entry in the Agenda is associated with one of the following stages: Prerule, Proposed Rule, Final Rule, Long-Term Actions, and Completed Actions"
+			"description": "Each entry in the Agenda is associated with one of the following stages: Prerule, Proposed Rule, Final Rule, Long-Term Actions, and Completed Actions."
 		},
 
 		"majorRule": 
