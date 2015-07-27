@@ -117,7 +117,7 @@ p  {
 ul, blockquote, pre, td, th, label {
     margin: 0;
     font-size: 1em;
-    line-height: 1.25em;
+    line-height: 1em;
     margin-bottom: 1em;
 }
 
@@ -605,7 +605,7 @@ footer {
 }
 
 .footer h4 {
-    margin-top: 1.5em;
+    margin-top: 1em;
     margin-bottom: .5em;
     margin-left: .25em;
     font-size: 16px;
@@ -669,7 +669,7 @@ footer a:hover {
     }
 
     footer {
-    padding-top: .75em;
+    padding-top: .5em;
     padding-bottom: 1em;
     border-top: 2px solid #BABBBD;
     background: #F1F2F2;
@@ -680,11 +680,11 @@ footer a:hover {
     }
 
     .footer h4 {
-        margin: 1em 0 .5em 0;
+        margin: .5em 0 .5em 0;
     }
 
     .footer p {
-        margin: .75em 0;
+        margin: .5em 0;
     }
 
     .footer section {
@@ -713,20 +713,20 @@ footer a:hover {
 
 /* DESKTOP STYLES 640px */
 
-@media only screen and (min-width: 40em) and (min-height: 43.75em) {
+@media only screen and (min-width: 40em) and (min-height: 38.75em) {
     body {
         padding-bottom: 12em;
     }
 }
 
-@media screen and (min-width: 50em) and (min-height: 43.75em) {
+@media screen and (min-width: 50em) and (min-height: 38.75em) {
     /* Only fix sidebar position if the screen has enough width (800px) */
     aside {
         position: fixed;
     }
 }
 
-@media screen and (min-width: 50em) and (min-height: 43.75em) {
+@media screen and (min-width: 50em) and (min-height: 38.75em) {
 
     /* LAYOUT */
 
@@ -740,7 +740,7 @@ footer a:hover {
     }
 
     footer {
-       padding: 2em 0;
+       padding: 1em 0;
        border-top: 2px solid #BABBBD;
        background: #F1F2F2;
        font-family: "Avenir Next", Arial, sans-serif;
@@ -778,7 +778,7 @@ footer a:hover {
 
 
 /* TABLET/NETBOOK 744px */
-@media only screen and (min-width: 50em) and (min-height: 43.75em) {
+@media only screen and (min-width: 50em) and (min-height: 38.75em) {
     nav {
         text-align: left;
     } 
@@ -814,7 +814,7 @@ footer a:hover {
 /* LANDSCAPE TABLET/NETBOOK/LAPTOP (1024PX) */
 /* full header design */
 
-@media only screen and (min-width: 50em) and (min-height: 43.75em) {
+@media only screen and (min-width: 50em) and (min-height: 38.75em) {
     aside {
         margin-top: 6.25em;
         width: 13.75em;
@@ -849,7 +849,7 @@ footer a:hover {
 } 
 
 
-@media only screen and (min-width: 75em) and (min-height: 43.75em) {
+@media only screen and (min-width: 75em) and (min-height: 38.75em) {
 
 }
 /* DESKTOP 
@@ -857,7 +857,7 @@ footer a:hover {
 
 /*    W I D E S C R E E N    */
 /* Increased body size for legibility */
-@media only screen and (min-width: 75em) and (min-height: 43.75em) {
+@media only screen and (min-width: 75em) and (min-height: 38.75em) {
     body {
         
     }
