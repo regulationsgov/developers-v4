@@ -13,7 +13,7 @@ You can search for a list of documents based on the criteria passed by using the
 In order to obtain more details about a single document, you can use the endpoint ```https://api.data.gov/regulations/v3/document```. A document is defined by one of the following types: Comment, Proposed Rule, Rule, Supporting & Related, or Other. Each document type has its own set of attributes, which vary based on the Agency posting the document. Another defining characteristic is if the document is part of a Rulemaking or Nonrulemaking Docket. 
 
 #### Searching for a docket
-A docket is an organizational folder containing multiple documents. Dockets can be searched using the endpoint: https://api.data.gov/regulations/v3/docket.
+A docket is an organizational folder containing multiple documents. Dockets can be searched using the endpoint: ```https://api.data.gov/regulations/v3/docket```.
 
 #### Rate limits
 Regulations.gov relies on api.data.gov's services for rate limiting and metrics tracking. The default rate limit of 1,000 requests per hour applies to all Regulations.gov API users. You may contact us if you require a higher request rate.
