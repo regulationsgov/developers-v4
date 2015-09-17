@@ -2,7 +2,7 @@
   "swaggerVersion": "1.2",
   "basePath": "http://api.data.gov/regulations/v3",
   "produces": [
-    "application/json",
+    "application/json; charset=UTF-8",
     "application/xml"
   ],
   "resourcePath": "/api",
