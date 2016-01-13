@@ -24,6 +24,6 @@ defaults:
     values:
       organization-name: "Regulations.gov"
       organization-url: "http://regulations.gov"
-      organization-email: user@agency.gov
+      organization-contact: "http://www.regulations.gov/#!contactUs"
       organization-system: "Regulations"
       site-name: /developers
