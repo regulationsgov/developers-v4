@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Terms of Use
+title: Terms of Service
 nav: termsofuse
 permalink: /terms/
 ---
