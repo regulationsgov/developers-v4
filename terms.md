@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Terms of Service
-nav: termsofuse
+nav: terms
 permalink: /terms/
 ---
 
 Regulations.gov offers its public data in machine readable format via an Application Programming Interface ("API"). This service is offered subject to your acceptance of the terms and conditions contained herein as well as any relevant sections of the Regulations.gov website Privacy and Security Notice and the User Notice (collectively, the "Agreement").
- 
+
 #### Scope
 All of the content, documentation, code, and related materials made available to you through Regulations.gov is subject to these terms. Access to or use of Regulations.gov services or its content constitutes acceptance to this Agreement.
 
@@ -18,6 +18,7 @@ You may use any Regulations.gov API to develop a service to search, display, ana
 - Regulations.gov content is updated every day. API users who repackage and share the data or content with the public should display the "last updated" date near the Regulations.gov content.
 - End products that use Regulations.gov must conspicuously post to public users the following statement: "Regulations.gov and the Federal government cannot verify and are not responsible for the accuracy or authenticity of the data or analyses derived from the data after the data has been retrieved from Regulations.gov." Federal department and agency logos may not be used by persons who are not Federal agency employees or in relation to products (including Web pages) that are not Federal agency-sponsored.
 - All services which utilize or access the API should display the following notice prominently within the application: "This product uses the Regulations.gov Data API but is neither endorsed nor certified by Regulations.gov." You may use the Regulations.gov name or logo in order to identify the source of API content subject to these rules. You may not use the Regulations.gov name, logo, or the like to imply endorsement of any product, service, or entity, not-for-profit, commercial, or otherwise.
+- Regulations.gov does not provide support for non-government organizations that gain monetary value through use of Regulations.gov data.
 - Regulations.gov is not responsible for any collection or use of information through the application of the API key that is unauthorized, violates applicable laws, or otherwise inconsistent with the terms and conditions of this Agreement.
 
 #### Privacy
@@ -42,7 +43,7 @@ Regulations.gov reserves the right, at its sole discretion, to modify or replace
 #### Disclaimer of Warranties
 Regulations.gov services are provided "as is" and on an "as-available" basis. Regulations.gov hereby disclaims all warranties of any kind, express or implied, including without limitation the warranties of merchantability, fitness for a particular purpose, and non-infringement. Regulations.gov makes no warranty that the services will be error free or that access thereto will be continuous or uninterrupted.
 
-####Limitations on Liability
+#### Limitations on Liability
 In no event will Regulations.gov be liable with to respect to any subject matter of this Agreement under any contract, negligence, strict liability, or other legal or equitable theory for: (1) any special, incidental, or consequential damages; (2) the cost of procurement of substitute products or services; or (3) for interruption of use or loss or corruption of data.
 
 #### General Representations
