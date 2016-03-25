@@ -1,9 +1,9 @@
 name: Developer Hub
-markdown: redcarpet
+markdown: kramdown
 #kramdown:
 #  input: GFM
 
-redcarpet:
+kramdown:
   extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data",  "no_intra_emphasis", "fenced_code_blocks"]
 
 highlighter: pygments
