@@ -6,7 +6,6 @@ markdown: kramdown
 kramdown:
   extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data",  "no_intra_emphasis", "fenced_code_blocks"]
 
-highlighter: pygments
 safe: true
 baseurl: /developers
 exclude: ['.ruby-version', 'node_modules', 'package.json', 'bower.json']
@@ -23,7 +22,7 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       organization-name: "Regulations.gov"
-      organization-url: "http://regulations.gov"
-      organization-contact: "http://www.regulations.gov/#!contactUs"
+      organization-url: "https://www.regulations.gov"
+      organization-contact: "https://www.regulations.gov/contactUs"
       organization-system: "Regulations"
       site-name: /developers
