@@ -1,4 +1,4 @@
-@import "fonts.css";
+/* @import "fonts.css"; */
 /* @import "normalize.css"; */
 
 /*
@@ -874,7 +874,7 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
 
 
 
-/* THESE ARE FOR POST CALLS ONLY 
+/* THESE ARE FOR POST CALLS ONLY
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post {
     float: none;
     clear: both;
@@ -1053,7 +1053,7 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
 }
 */
 
-/* THIS IS FOR PUT CALLS ONLY 
+/* THIS IS FOR PUT CALLS ONLY
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put {
     float: none;
     clear: both;
@@ -1368,7 +1368,7 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
 
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.patch div.content form input[type='text'].error {
     outline: 2px solid black;
-    outline-color: #F5D5C3; 
+    outline-color: #F5D5C3;
 }
 
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.patch div.content div.sandbox_header {
@@ -1393,7 +1393,7 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
 
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.patch div.content div.sandbox_header a {
     padding: 4px 0 0 10px;
-    color: #dcb67f; 
+    color: #dcb67f;
     display: inline-block;
     font-size: 0.9em;
 }
@@ -1424,9 +1424,9 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
     display: block;
     margin: 0 0 0 0;
     padding: 0;
-    background-color: #fcffcd; 
+    background-color: #fcffcd;
     border: 1px solid black;
-    border-color: #ffd20f; 
+    border-color: #ffd20f;
 }
 
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.head div.heading h3 {
@@ -1447,7 +1447,7 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
 
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.head div.heading h3 span.http_method a {
     text-transform: uppercase;
-    background-color: #ffd20f; 
+    background-color: #ffd20f;
     text-decoration: none;
     color: white;
     display: inline-block;
