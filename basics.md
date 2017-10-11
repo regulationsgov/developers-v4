@@ -16,7 +16,7 @@ In order to obtain more details about a single document, you can use the endpoin
 A docket is an organizational folder containing multiple documents. Dockets can be searched using the endpoint: ```https://api.data.gov/regulations/v3/docket```.
 
 #### Rate limits
-Regulations.gov relies on api.data.gov's services for rate limiting and metrics tracking. The default rate limit of 1,000 requests per hour applies to all Regulations.gov API users. You may contact us if you require a higher request rate.
+Regulations.gov relies on api.data.gov's services for rate limiting and metrics tracking. The default rate limit of 1,000 requests per hour applies to all Regulations.gov API users.
 
 #### Examples
 Return a list of all Rules and Proposed Rules posted in the month of September 2014 using this example [API Call](https://api.data.gov/regulations/v3/documents.json?rpp=25&po=0&dct=PR%252BFR&pd=09%257C01%257C14-09%257C30%257C14&encoded=1&api_key=DEMO_KEY).
