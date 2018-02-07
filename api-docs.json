@@ -5,7 +5,7 @@
 	"apiVersion": "3.0",
 	"swaggerVersion": "1.2",
 {% if site.github %}
-	"basePath": {{ "/api-docs/" | prepend: site.github.url | replace: 'http://', '//' }},
+	"basePath": "{{ "/api-docs/" | prepend: site.github.url | replace: 'http://', '//' }}",
 {% else %}
     "basePath": "http://localhost:4000/api-docs/",
 {% endif %}
