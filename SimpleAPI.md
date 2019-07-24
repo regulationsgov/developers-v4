@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Contribute
-nav: contribute
-permalink: /contribute/
+title: API
+nav: api
+permalink: /api/
 ---
 
 _**Notice:** Please be aware that any square brackets, `[]`, in the API calls are for visual purposes in this documentation and web formatted values of `%5B` and `%5D` should be used in their place for the actual calls.  Additionally, do not include square brackets for for any items marked `(none)` within tables._
