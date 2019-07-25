@@ -61,3 +61,4 @@ This call is similar to the previous but allows the user to modify the results b
 **GET** `https://beta-api.regulations.gov/api/docketdetails/{Docket ID}`
 
 Obtains the information for the docket with the specidfied Docket ID.
+<body id="api"></body>
