@@ -76,5 +76,5 @@ Complex queries can be made by combining multiple actions and/or parameters. How
 
 **GET** `https://beta-api.regulations.gov/api/docketdetails/{Docket ID}`
 
-Obtains the information for the docket with the specified Docket ID.
+Obtains the information for the docket with the given Docket ID.
 <body id="api"></body>
