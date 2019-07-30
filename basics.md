@@ -2,7 +2,7 @@
 layout: default
 title: API Basics
 nav: basics
-permalink: /basics/
+#!permalink: /basics/
 ---
 Regulations.gov offers a GET API with three main operations: Document, Documents, and Docket. These operations can be used to search for a single document, a list of documents, or dockets.
 
