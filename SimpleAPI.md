@@ -5,7 +5,7 @@ nav: api
 permalink: /api/
 ---
 
-_**Notice:** Please be aware that any square brackets, `[]`, in the API calls are for visual purposes in this documentation and web formatted values of `%5B` and `%5D` should be used in their place for the actual calls.  Additionally, do not include square brackets for for any items marked `(none)` within tables._
+_**Notice:** Please be aware that any square brackets, `[]`, in the API calls are for visual purposes in this documentation and web formatted values of `%5B` and `%5D` should be used in their place for the actual calls.  Additionally, do not include square brackets when not utilizing one of the fields._
 
 ---
 
@@ -15,27 +15,35 @@ _**Notice:** Please be aware that any square brackets, `[]`, in the API calls ar
 
 This call returns a query of all documents with the default sorting and pagination settings.
 
-**GET** `https://beta-api.regulations.gov/api/documents?{Action}[{Parameter}][{Parameter Modifier}]={Expected Value}`
+**GET** `https://beta-api.regulations.gov/api/documents?{Action}[{Parameter}][{Parameter Modifier}]={Value}`
 
 This call is similar to the previous but allows the user to modify the results by utilizing any of the following query parameters:
 
-| Action | Parameter| Parameter Modifier | Expected Value |
-|---|---|---|---|
-| filter | agencyId	| (none) | Agency acronym |
-|| commentEndDate | `ge` for greater than or equal, `le` for less than or equal, or omitted for equal to | A date in the format of `MM-dd-yyyy`|
-|| docketId | (none) | Docket ID |
-|| documentType | (none) | The document type |
-|| searchTerm | (none) | The term by which to filter the documents |
-|| postedDate | `ge` for greater than or equal, `le` for less than or equal, or omitted for equal to | A date in the format of `MM-dd-yyyy`|
-|| subtype | (none) | The document subtype |
-|| withinCommentPeriod | (none) | `true`. _This parameter should not be included unless searching for documents that are open for comment._ |
-| sort | (none) | (none) | `commentEndDate`, `postedDate`, or `title`.  Results will be in ascending order; to sort in descending order, prepend a minus sign to the value (e.g. `-title`)|
-| page | number | (none) | A numerical value between, and including, 1 and 20 |
-|| size | (none) | A numerical value between, and including, 5 and 250 |
+| Action | Parameter| Description |
+|---|---|---|
+| filter | agencyId	| Filters results for the agency acronym specified in the value. |
+|| commentEndDate | Filters results relative to the comment end date.  The value must be formatted as `MM-dd-yyyy`.<br/><br/> Omission of a parameter modifier will match results to the exact date provided, otherwise, one of the parameter modifiers below may be used: <br/> `ge` - greater than or equal <br/> `le` - less than or equal |
+|| docketId | Filters results on the specified Docket ID. |
+|| documentType | Filters results on the specified document type. |
+|| searchTerm | Filters results on the given term. |
+|| postedDate | Filters results relative to the posted date.  The value must be formatted as `MM-dd-yyyy`.<br/><br/> Omission of a parameter modifier will match results to the exact date provided, otherwise, one of the parameter modifiers below may be used: <br/> `ge` - greater than or equal <br/> `le` - less than or equal |
+|| subtype | Filters results on the supplied document subtype |
+|| withinCommentPeriod | Filters results for documents that are open for comment by setting the value to `true`. <br/><br/> _`False` is not an acceptable value for this parameter, hence it should be removed when not being used._ |
+| sort | (none) | Sorts the results on the field specified in the value.  The default behavior will sort the results in ascending order; to sort in descending order, prepend a minus sign to the value. <br/><br/> Supported values are `commentEndDate`, `postedDate`, and `title`. |
+| page | number | Specifies the number for the page of results that will be returned from the query. <br/><br/> Acceptable values are numerical between, and including, 1 and 20. |
+|| size | Specifies the size per page of results that will be returned from the query. <br/><br/> Acceptable values are numerical between, and including, 5 and 250. |
+
+Complex queries can be made by combining multiple actions and/or parameters.  However, only one sort will be applied and a page number and size should each only be provided once per query.
+
+######Examples
+* https://beta-api.regulations.gov/api/documents?filter[agencyId]=EPA
+* https://beta-api.regulations.gov/api/documents?filter[searchTerm]=Water
+* https://beta-api.regulations.gov/api/documents?filter[searchTerm]=Air&filter[searchTerm]=Pollution
+* https://beta-api.regulations.gov/api/documents?filter[withinCommentPeriod]=true&filter[documentType]=Notice&sort=-postedDate&page[size]=50&page[number]=10
 
 **GET** `https://beta-api.regulations.gov/api/documentdetails/{Document ID}`
 
-Obtains the information for the document with the specidfied Document ID.
+Obtains the information for the document with the given Document ID.
 
 ---
 
@@ -45,20 +53,28 @@ Obtains the information for the document with the specidfied Document ID.
 
 This call returns a query of dockets with the default sorting and pagination settings.
 
-**GET** `https://beta-api.regulations.gov/api/dockets?{Action}[{Parameter}][{Parameter Modifier}]={Expected Value}`
+**GET** `https://beta-api.regulations.gov/api/dockets?{Action}[{Parameter}]={Value}`
 
 This call is similar to the previous but allows the user to modify the results by utilizing any of the following query parameters:
 
-| Action | Parameter| Parameter Modifier | Expected Value |
-|---|---|---|---|
-| filter | agencyId	| (none) | Agency acronym |
-|| docketType | (none) | The docket type |
-|| searchTerm | (none) | The term by which to filter the documents |
-| sort | (none) | (none) | `title`.  Results will be in ascending order; to sort in descending order, prepend a minus sign to the value (e.g. `-title`)|
-| page | number | (none) | A numerical value between, and including, 1 and 20 |
-|| size | (none) | A numerical value between, and including, 5 and 250 |
+| Action | Parameter| Description |
+|---|---|---|
+| filter | agencyId	| Filters results for the agency acronym specified in the value. |
+|| docketType | Filters results on the specified docket type. |
+|| searchTerm | The term by which to filter the dockets. |
+| sort | (none) | Sorts the results on the field specified in the value.  The default behavior will sort the results in ascending order; to sort in descending order, prepend a minus sign to the value. <br/><br/> Currently, the only supported value is `title`. |
+| page | number | Specifies the number for the page of results that will be returned from the query. <br/><br/> Acceptable values are numerical between, and including, 1 and 20. |
+|| size | Specifies the size per page of results that will be returned from the query. <br/><br/> Acceptable values are numerical between, and including, 5 and 250. |
+
+Complex queries can be made by combining multiple actions and/or parameters. However, only one sort will be applied and a page number and size should each only be provided once per query.
+
+######Examples
+* https://beta-api.regulations.gov/api/dockets?filter[agencyId]=EPA
+* https://beta-api.regulations.gov/api/dockets?filter[searchTerm]=Water
+* https://beta-api.regulations.gov/api/dockets?filter[searchTerm]=Air&filter[searchTerm]=Pollution
+* https://beta-api.regulations.gov/api/dockets?filter[searchTerm]=Farming&filter[docketType]=Nonrulemaking&sort=title&page[size]=50&page[number]=10
 
 **GET** `https://beta-api.regulations.gov/api/docketdetails/{Docket ID}`
 
-Obtains the information for the docket with the specidfied Docket ID.
+Obtains the information for the docket with the specified Docket ID.
 <body id="api"></body>
