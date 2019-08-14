@@ -6,6 +6,7 @@ permalink: /response/
 ---
 
 # Dockets
+
 | Property | Type | Description |
 | --- | --- | --- |
 | agencyId | String | The acronym used to abbreviate the name of the agency associated with the docket. |
@@ -82,6 +83,7 @@ permalink: /response/
 ---
 
 # Documents
+
 | Property | Type | Description |
 | --- | --- | --- |
 | additionalRins | Collection of Strings | One or more RIN(s) to which the document relates. |
