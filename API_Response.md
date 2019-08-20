@@ -14,17 +14,17 @@ permalink: /response/
 | displayProperties | Collection of Objects | See <a href="#display_properties">Display Properties</a> for further details. |
 | dkAbstract | String | The detailed description of the docket. |
 | docketType | String | The docket type.<br/><br/>The value will be `Rulemaking` or `Nonrulemaking`. |
-| effectiveDate | String | The date the docket is effective<br/><br/>The date is formatted as ISO 8601 with an offset such as `2019-01-20T13:15:45+01:00`. |
+| effectiveDate | String | The date the docket is put into effect.<br/><br/>The date is formatted as ISO 8601 with an offset such as `2019-01-20T13:15:45+01:00`. |
 | field1 | String | An agency-specific field used for storing additional data with the docket. |
 | field2 | String | An agency-specific field used for storing additional data with the docket. |
 | generic | String | An agency-specific field used for storing additional data with the docket. |
-| objectId | String | The unique Regulations.gov ID associated with the docket. |
+| objectId | String | The unique Regulations.gov ID associated with the docket.  This value is often expected for internal use only. |
 | keywords | Collection of Strings | Agency-selected keywords associated with a docket to improve its searchability by the public. |
-| legacyId | String | The agency-specific identifier that was given to the document in the legacy system. |
+| legacyId | String | The agency-specific identifier that was given to the docket in the legacy system. |
 | modifyDate | String | The date when the docket was last modified.<br/><br/>The date is formatted as ISO 8601 with an offset such as `2019-01-20T13:15:45+01:00`. |
 | organization | String | Identifies the docket's orginating agency and/or department. |
-| petitionNbr | String | A unique ID assigned by an agency to a petition-related docket. |
-| program | String | The name of the program aligned with the agency in which the docket relates.|
+| petitionNbr | String | A unique ID assigned by the agency to a petition-related docket. |
+| program | String | The name of the program aligned with the agency to which the docket relates.|
 | regulatoryActionInfo | Object | See <a href="#regulatory_actions">Regulatory Actions</a> for further details. |
 | rin | String | The Regulatory Information Number for the docket as related to the Unified Agenda of Federal Regulatory and Deregulatory Actions.  If a RIN is present, further information should be available with the `regulatoryActionInfo` object. |
 | shortTitle | String | A shortened version of the `title` or sometimes a combination of letters and/or numbers assigned to the docket for the purpose of brevity. |
@@ -46,22 +46,22 @@ More information may be obtained at [Reginfo.gov](https://www.reginfo.gov/public
 | contact | Collection of Objects | See <a href="#regulatory_actions_contact">Contact Information</a> for further details. |
 | abstractText | String | A descriptive overview of the regulatory action. |
 | energyAffected | String | An indication of whether or not the agency has prepared or plans to prepare a Statement of Energy Effects for the action, as required by Executive Order 13211 "Actions Concerning Regulations That Significantly Affect Energy Supply, Distribution, or Use," signed May 18, 2001 (66 FR 28355). |
-| execOrder13771Designation | String | The preliminary EO 13771 designation as defined by guidance<br/><br/>Possible values are `Deregulatory`, `Regulatory`, `Exempt`, `Waived`, and `Other`. |
+| execOrder13771Designation | String | The preliminary EO 13771 designation as defined by guidance.<br/><br/>Possible values are `Deregulatory`, `Regulatory`, `Exempt`, `Waived`, and `Other`. |
 | federalism | String | An indication of whether or not the action has "federalism implications" as defined in Executive Order 13132. This term refers to actions "that have substantial direct effects on the States, on the relationship between the national government and the States, or on the distribution of power and responsibilities among the various levels of government." |
 | govtLevel | Collection of Strings | An indication of whether or not the action is expected to affect levels of government and, if so, whether the governments are `State`, `Local`, `Tribal`, or `Federal`. |
 | internationalInterest | String | An indication of whether or not the regulation is expected to have international trade and investment effects, or otherwise may be of interest to the Nation's international trading partners. |
 | legalAuthority | Collection of Strings | The sections of the United States Code (U.S.C.), Public Law (Pub. L.), or the Executive Order (E.O.) that authorize the regulatory action. |
 | legalDeadline | Collection of Objects | See <a href="#regulatory_actions_legal_deadlines">Legal Deadlines</a> for further details. |
-| major | String | An indication of whether or not the rule is "major" under 5 U.S.C. 801 (Pub. L. 104-121) because it has resulted or is likely to result in an annual effect on the economy of $100 million or more or meets other criteria specified in that Act. The Act provides that the Administrator of the Office of Information and Regulatory Affairs will make the final determination as to whether a rule is major. |
+| major | String | An indication of whether or not the rule is "major" under 5 U.S.C. 801 (Pub. L. 104-121) because it has resulted or is likely to result in an annual effect on the economy of $100 million or more, or meets other criteria specified in the Act. The Act provides that the Administrator of the Office of Information and Regulatory Affairs will make the final determination as to whether a rule is major. |
 | priorityCategory | String | An indication of the significance of the regulation.<br/><br/>Possible values are `Economically Significant`, `Other Significant`, `Substantive/Nonsignificant`, `Routine and Frequent`, and `Informational/Administrative/Other`. |
 | publicationPeriod | String | Specific month and year that the rulemaking action is published in the Unified Agenda. |
 | relatedRin | Collection of Strings | One or more past or current RIN(s) associated with activity related to the action, such as merged RINs, split RINs, new activity for previously completed RINs, or duplicate RINs. |
-| regulatoryPlan | String | An indication of whether or not the rulemaking was included in the agency's current regulatory plan published in the fall of any given year. |
+| regulatoryPlan | String | An indication of whether or not the rulemaking was included in the agency's current regulatory plan published in the Fall of any given year. |
 | rfaRequired | String | An indication of whether or not an analysis is required by the Regulatory Flexibility Act (5 U.S.C. 601 et seq.) because the rulemaking action is likely to have a significant economic impact on a substantial number of small entities as defined by the Act. |
 | ruleStage | String | Each entry in the Unified Agenda is associated with one of the following, five rulemaking stages:<br/><br/>`Prerule Stage`, `Proposed Rule Stage`, `Final Rule Stage`, `Long-Term Actions`, `Completed Actions` |
 | ruleTitle | String | The title of the regulatory action. |
 | smallEntity | Collection of Strings | The types of small entities (businesses, governmental jurisdictions, or organizations) on which the rulemaking action is likely to have an impact as defined by the Regulatory Flexibility Act. Some agencies have chosen to indicate likely effects on small entities even though they believe that a Regulatory Flexibility Analysis will not be required. |
-| timeTable | Collection of Objects | See <a href="#regulatory_actions_time_tables">Time Tables</a> for further details. |
+| timeTable | Collection of Objects | See <a href="#regulatory_actions_timetables">Timetables</a> for further details. |
 | unfundedMandate | Collection of Strings | An indication of whether or not the rule is covered by section 202 of the Unfunded Mandates Reform Act of 1995 (Pub. L. 104-4). |
 
 <a name="regulatory_actions_contact"></a>
@@ -81,7 +81,7 @@ The contact object contains information that is necessary to communicate with a 
 | phoneExt | String | An extension required to route the call to the contact after dialing the phone number. |
 | tddPhone | String | The phone number for reaching the contact when utilizing a teleprinter for persons with hearing or speech difficulties. |
 | fax | String | The phone number where a fax may be sent to the contact. |
-| email | String | An email address that can be used to communicate with the contact. |
+| email | String | An e-mail address that can be used to communicate with the contact. |
 | mailingAddress | Object | See <a href="#regulatory_actions_contact_address">Contact Mailing Address</a> for further details. |
 
 <a name="regulatory_actions_contact_address"></a>
@@ -103,15 +103,15 @@ The legal deadlines provide an indication of whether or not the action is subjec
 
 | Property | Type | Description |
 | --- | --- | --- |
-| action | String | The required action, which can be notice of proposed rulemaking (`NPRM`), a `Final` action, or some other action. |
+| action | String | The required action, which can be a notice of proposed rulemaking (`NPRM`), a `Final` action, or some other action. |
 | source | String | The origination of the deadline, either `Statutory` or `Judicial`. |
 | description | String | The explanation or additional information of the action. |
 | date | String | The required resolution date for the action. |
 
-<a name="regulatory_actions_time_tables"></a>
-#### Regulatory Actions: Time Tables
+<a name="regulatory_actions_timetables"></a>
+#### Regulatory Actions: Timetables
 
-The time tables contain all of the previous steps and a projected date for at least the next step of the regulatory action.
+The timetables contain all of the previous steps and a projected date for at least the next step of the regulatory action.
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -125,7 +125,7 @@ The time tables contain all of the previous steps and a projected date for at le
 
 | Property | Type | Description |
 | --- | --- | --- |
-| additionalRins | Collection of Strings | One or more RIN(s) to which the document relates. |
+| additionalRins | Collection of Strings | One or more Regulatory Information Numbers (RINs) to which the document relates. |
 | address1 | String | The first line of the submitter's address. |
 | address2 | String | The second line of the submitter's address. |
 | agencyId | String | The acronym used to abbreviate the name of the agency associated with the document. |
@@ -137,8 +137,8 @@ The time tables contain all of the previous steps and a projected date for at le
 | city | String | The city associated with the submitter's address. |
 | commentCategory | String |  |
 | commentEndDate | String | The date that closes the period when public comments may be submitted on the document.<br/><br/>The date is formatted as ISO 8601 with an offset such as `2019-01-20T13:15:45+01:00`. |
-| commentOn | String |  |
-| commentOnDocumentId | String | The ID of the document to which the comment has been made. |
+| commentOn | String | The unique Regulations.gov ID of the document on which the comment has been made.  This value is often expected for internal use only.  |
+| commentOnDocumentId | String | The ID of the document on which the comment has been made. |
 | commentStartDate | String | The date that begins the period when public comments may be submitted on the document.<br/><br/>The date is formatted as ISO 8601 with an offset such as `2019-01-20T13:15:45+01:00`. |
 | content | String |  |
 | country | String | The country associated with the submitter's address. |
@@ -147,7 +147,7 @@ The time tables contain all of the previous steps and a projected date for at le
 | docketId | String | The ID of the docket to which the document corresponds. |
 | documentType | String | The document type.<br/><br/>Possible values are `Notice`, `Rule`, `Proposed Rule`, `Supporting & Related Material`, `Public Submission`, and `Other`. |
 | duplicateComments | Integer | The number of duplicate or significantly similar comments made on the associated document. |
-| effectiveDate | String | The date the document is effective.<br/><br/>The date is formatted as ISO 8601 with an offset such as `2019-01-20T13:15:45+01:00`. |
+| effectiveDate | String | The date the document is put into effect.<br/><br/>The date is formatted as ISO 8601 with an offset such as `2019-01-20T13:15:45+01:00`. |
 | email | String | The submitter's e-mail address. |
 | exhibitLocation | String |  |
 | exhibitType | String |  |
@@ -157,10 +157,10 @@ The time tables contain all of the previous steps and a projected date for at le
 | fileFormats | Collection of Objects | See <a href="#document_file_formats">File Formats</a> for further details. |
 | firstName | String | The submitter's first name. |
 | frDocNum | String | The unique identifier of a document originating in the [Federal Register](https://www.federalregister.gov/). |
-| frVolNum | String | The [Federal Register](https://www.federalregister.gov/) volume number where the document was published |
+| frVolNum | String | The [Federal Register](https://www.federalregister.gov/) volume number where the document was published. |
 | govAgency | String | The name of the government agency that the submitter represents. |
 | govAgencyType | String | The type of government agency that the submitter represents. |
-| objectId | String | The unique Regulations.gov ID associated with the document. |
+| objectId | String | The unique Regulations.gov ID associated with the document.  This value is often expected for internal use only. |
 | implementationDate | String | The date the document is to be implemented.<br/><br/>The date is formatted as ISO 8601 with an offset such as `2019-01-20T13:15:45+01:00`. |
 | lastName | String | The submitter's last name.  |
 | legacyId | String | An agency-specific identifier that was given to the document in the legacy system. |
@@ -168,7 +168,7 @@ The time tables contain all of the previous steps and a projected date for at le
 | modifyDate | String | The date when the document was last modified.<br/><br/>The date is formatted as ISO 8601 with an offset such as `2019-01-20T13:15:45+01:00`. |
 | ombApproval | String | The control number assigned when approval is given by the Office of Management and Budget (OMB) in accordance with the Paperwork Reduction Act (PRA).  |
 | organization | String | The organization that the submitter represents. |
-| originalDocumentId | String |  |
+| originalDocumentId | String | The document ID that was assigned when first entered into the system should a change occur that requires a new document ID to be assigned. |
 | pageCount | Integer | Conveys the number of pages contained in the document. |
 | paperLength | Integer | When the document is in paper format, indicates the length of the paper. |
 | paperWidth | Integer | When the document is in paper format, indicates the width of the paper. |
@@ -189,8 +189,8 @@ The time tables contain all of the previous steps and a projected date for at le
 | submitterRepCityState | String | The city and state associated with the submitter representative's location. |
 | subtype | String | An agency-specific attribute to further categorize a document beyond the type (`documentType`). |
 | title | String | The formal title of the document. |
-| topics | Collection of Strings | The principal topics to which this document pertains. |
-| trackingNbr | String |  |
+| topics | Collection of Strings | The principal topics to which the document pertains. |
+| trackingNbr | String | The identifier assigned to the document that may be used to track its lifecycle within the system and is often used when interacting with the help desk. |
 | withdrawn | Boolean | Conveys if the document is withdrawn. |
 | zip | String | The zip code associated with the submitter's address. |
 | openForComment | Boolean | Indicates if the current date is between the comment start date and comment end date.  If the value is `true`, comments are being accepted for the document. |
