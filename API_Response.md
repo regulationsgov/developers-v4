@@ -5,6 +5,12 @@ nav: response
 permalink: /response/
 ---
 
+All responses from Regulations.gov are formatted with [JSON:API](https://jsonapi.org/) conventions and require the use of the corresponding media type, `application/vnd.api+json`.
+
+The descriptions below focus specifically on the `attributes` section of the `data` response object and indicate values that may be returned for both queries and detailed requests.  Note that not every response is guaranteed to contain each item.
+
+The only field not found below is `highlightedContent`, which is specifically returned for queries that filter on a search term.  The value will contain content highlights that match the search term with all sections concatenated and each matched text surrounded by HTML tags for emphasis (`<em>`) and marking/highlighting (`<mark>`).
+
 # Dockets
 
 | Property | Type | Description |
@@ -135,12 +141,13 @@ The timetables contain all of the previous steps and a projected date for at lea
 | authors | Collection of Strings | The individual, organization, or group of collaborators that contributed to the creation of the document. |
 | cfrPart | String | The Code of Federal Regulations (CFR) Citation applicable to the document. |
 | city | String | The city associated with the submitter's address. |
-| commentCategory | String |  |
+| comment | String | The body of a submitted comment. |
+| commentCategory | String | An agency-specific category allowing agencies to group comments according to their type. |
 | commentEndDate | String | The date that closes the period when public comments may be submitted on the document.<br/><br/>The date is formatted as ISO 8601 with an offset such as `2019-01-20T13:15:45+01:00`. |
 | commentOn | String | The unique Regulations.gov ID of the document on which the comment has been made.  This value is often expected for internal use only.  |
 | commentOnDocumentId | String | The ID of the document on which the comment has been made. |
 | commentStartDate | String | The date that begins the period when public comments may be submitted on the document.<br/><br/>The date is formatted as ISO 8601 with an offset such as `2019-01-20T13:15:45+01:00`. |
-| content | String |  |
+| content | String | The content of a document that has originated from the [Federal Register](https://www.federalregister.gov/). |
 | country | String | The country associated with the submitter's address. |
 | displayProperties | Collection of Objects | See <a href="#display_properties">Display Properties</a> for further details. |
 | docAbstract | String | The detailed description of the document. |
@@ -149,8 +156,8 @@ The timetables contain all of the previous steps and a projected date for at lea
 | duplicateComments | Integer | The number of duplicate or significantly similar comments made on the associated document. |
 | effectiveDate | String | The date the document is put into effect.<br/><br/>The date is formatted as ISO 8601 with an offset such as `2019-01-20T13:15:45+01:00`. |
 | email | String | The submitter's e-mail address. |
-| exhibitLocation | String |  |
-| exhibitType | String |  |
+| exhibitLocation | String | The physical location of an exhibit to which a document refers. |
+| exhibitType | String | The type of exhibit to which a document refers. |
 | fax | String | The submitter's fax number. |
 | field1 | String | An agency-specific field used for storing additional data with the document. |
 | field2 | String | An agency-specific field used for storing additional data with the document. |
