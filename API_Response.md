@@ -28,7 +28,7 @@ The only field not found below is `highlightedContent`, which is specifically re
 | keywords | Collection of Strings | Agency-selected keywords associated with a docket to improve its searchability by the public. |
 | legacyId | String | The agency-specific identifier that was given to the docket in the legacy system. |
 | modifyDate | String | The date when the docket was last modified.<br/><br/>The date is formatted as ISO 8601 with an offset such as `2019-01-20T13:15:45+01:00`. |
-| organization | String | Identifies the docket's orginating agency and/or department. |
+| organization | String | Identifies the docket's originating agency and/or department. |
 | petitionNbr | String | A unique ID assigned by the agency to a petition-related docket. |
 | program | String | The name of the program aligned with the agency to which the docket relates.|
 | regulatoryActionInfo | Object | See <a href="#regulatory_actions">Regulatory Actions</a> for further details. |
