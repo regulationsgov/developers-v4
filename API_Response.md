@@ -1,6 +1,6 @@
 ---
 layout: default
-title: API Response
+title: API Response Models
 nav: response
 permalink: /response/
 ---
@@ -10,6 +10,10 @@ All responses from Regulations.gov are formatted with [JSON:API](https://jsonapi
 The descriptions below focus specifically on the `attributes` section of the `data` response object and indicate values that may be returned for both queries and detailed requests.  Note that not every response is guaranteed to contain each item.
 
 The only field not found below is `highlightedContent`, which is specifically returned for queries that filter on a search term.  The value will contain content highlights that match the search term with all sections concatenated and each matched text surrounded by HTML tags for emphasis (`<em>`) and marking/highlighting (`<mark>`).
+
+Please see the [API]({{ site.baseurl }}/api/) documentation to learn how to make requests and [Sample Responses]({{ site.baseurl }}/sample/) for examples.
+
+---
 
 # Dockets
 

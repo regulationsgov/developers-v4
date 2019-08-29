@@ -7,6 +7,8 @@ permalink: /api/
 
 _**Notice:** Please be aware that any square brackets, `[]`, in the API calls are for visual purposes in this documentation and web formatted values of `%5B` and `%5D` should be used in their place for the actual calls.  Additionally, do not include square brackets when not utilizing one of the fields._
 
+Please see the [Response Models]({{ site.baseurl }}/response/) to understand more about the fields contained within responses and [Sample Responses]({{ site.baseurl }}/sample/) for examples.
+
 ---
 
 # Document Calls
