@@ -452,6 +452,14 @@ nav li {
     margin-left: -4px;
 }
 
+#sample a.sample {
+    color: #101820;
+    border-bottom: none;
+    border-left: 4px solid #09C;
+    background-color: transparent;
+    margin-left: -4px;
+}
+
 .page-title a,
 .page-title a:link,
 .page-title a:visited {
