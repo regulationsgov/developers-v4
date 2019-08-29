@@ -5,7 +5,7 @@ nav: sample
 permalink: /sample/
 ---
 
-The following examples demonstrate how responses may appear after making calls to the API.
+The following examples demonstrate how responses may appear after sending requests to API endpoints.  Please be aware that  actual responses may not contain all of the same fields, however, most should be present.  Furthermore, these samples highlight the responses of detailed requests, whereas queries may return multiple items with subsets of the fields found in these examples.
 
 Please see the [API]({{ site.baseurl }}/api/) documentation to learn how to make requests and [Response Models]({{ site.baseurl }}/response/) to understand more about the fields contained within responses.
 
