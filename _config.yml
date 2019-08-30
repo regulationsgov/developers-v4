@@ -23,6 +23,9 @@ defaults:
     values:
       organization-name: "Regulations.gov"
       organization-url: "https://www.regulations.gov"
-      organization-contact: "https://www.regulations.gov/contactUs"
+      organization-contact: "https://beta.regulations.gov/contact-us"
       organization-system: "Regulations"
+      organization-about: "https://beta.regulations.gov/about"
+      organization-helpdesk: "regulations@erulemakinghelpdesk.com"
+      organization-api-url: "https://beta-api.regulations.gov"
       site-name: /developers-v4

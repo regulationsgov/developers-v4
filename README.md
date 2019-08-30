@@ -5,7 +5,7 @@ Template Developer Hub
 
 ----
 
-This is the documentation repository for the [System] dataset.
+This is the documentation repository for the {{ page.organization-system }} dataset.
 Check out this API documentation at http://usg-website-templates.github.io/developer-hub/.
 
 Thanks to the CFPB [eRegs](https://github.com/cfpb/regulations-core) and [HMDA](https://github.com/cfpb/api) teams and their documentation work for starting us off with a great codebase.
