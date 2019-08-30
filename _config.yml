@@ -22,7 +22,7 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       organization-name: "Regulations.gov"
-      organization-url: "https://www.regulations.gov"
+      organization-url: "https://beta.regulations.gov"
       organization-contact: "https://beta.regulations.gov/contact-us"
       organization-system: "Regulations"
       organization-about: "https://beta.regulations.gov/about"
