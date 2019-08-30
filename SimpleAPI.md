@@ -13,11 +13,11 @@ Please see the [Response Models]({{ site.baseurl }}/response/) to understand mor
 
 # Document Calls
 
-**GET** `https://beta-api.regulations.gov/api/documents`
+**GET** `{{ page.organization-api-url }}/api/documents`
 
 This call returns a query of all documents with the default sorting and pagination settings.
 
-**GET** `https://beta-api.regulations.gov/api/documents?{Action}[{Parameter}][{Parameter Modifier}]={Value}`
+**GET** `{{ page.organization-api-url }}/api/documents?{Action}[{Parameter}][{Parameter Modifier}]={Value}`
 
 This call is similar to the previous but allows the user to modify the results by utilizing any of the following query parameters:
 
@@ -38,12 +38,12 @@ This call is similar to the previous but allows the user to modify the results b
 Complex queries can be made by combining multiple actions and/or parameters.  However, only one sort will be applied and a page number and size should each only be provided once per query.
 
 ### Examples
-* https://beta-api.regulations.gov/api/documents?filter[agencyId]=EPA
-* https://beta-api.regulations.gov/api/documents?filter[searchTerm]=Water
-* https://beta-api.regulations.gov/api/documents?filter[searchTerm]=Air&filter[searchTerm]=Pollution
-* https://beta-api.regulations.gov/api/documents?filter[withinCommentPeriod]=true&filter[documentType]=Notice&sort=-postedDate&page[size]=50&page[number]=10
+* {{ page.organization-api-url }}/api/documents?filter[agencyId]=EPA
+* {{ page.organization-api-url }}/api/documents?filter[searchTerm]=Water
+* {{ page.organization-api-url }}/api/documents?filter[searchTerm]=Air&filter[searchTerm]=Pollution
+* {{ page.organization-api-url }}/api/documents?filter[withinCommentPeriod]=true&filter[documentType]=Notice&sort=-postedDate&page[size]=50&page[number]=10
 
-**GET** `https://beta-api.regulations.gov/api/documentdetails/{Document ID}`
+**GET** `{{ page.organization-api-url }}/api/documentdetails/{Document ID}`
 
 Obtains the information for the document with the given Document ID.
 
@@ -51,11 +51,11 @@ Obtains the information for the document with the given Document ID.
 
 # Docket Calls
 
-**GET** `https://beta-api.regulations.gov/api/dockets`
+**GET** `{{ page.organization-api-url }}/api/dockets`
 
 This call returns a query of dockets with the default sorting and pagination settings.
 
-**GET** `https://beta-api.regulations.gov/api/dockets?{Action}[{Parameter}]={Value}`
+**GET** `{{ page.organization-api-url }}/api/dockets?{Action}[{Parameter}]={Value}`
 
 This call is similar to the previous but allows the user to modify the results by utilizing any of the following query parameters:
 
@@ -71,12 +71,12 @@ This call is similar to the previous but allows the user to modify the results b
 Complex queries can be made by combining multiple actions and/or parameters. However, only one sort will be applied and a page number and size should each only be provided once per query.
 
 ### Examples
-* https://beta-api.regulations.gov/api/dockets?filter[agencyId]=EPA
-* https://beta-api.regulations.gov/api/dockets?filter[searchTerm]=Water
-* https://beta-api.regulations.gov/api/dockets?filter[searchTerm]=Air&filter[searchTerm]=Pollution
-* https://beta-api.regulations.gov/api/dockets?filter[searchTerm]=Farming&filter[docketType]=Nonrulemaking&sort=title&page[size]=50&page[number]=10
+* {{ page.organization-api-url }}/api/dockets?filter[agencyId]=EPA
+* {{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Water
+* {{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Air&filter[searchTerm]=Pollution
+* {{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Farming&filter[docketType]=Nonrulemaking&sort=title&page[size]=50&page[number]=10
 
-**GET** `https://beta-api.regulations.gov/api/docketdetails/{Docket ID}`
+**GET** `{{ page.organization-api-url }}/api/docketdetails/{Docket ID}`
 
 Obtains the information for the docket with the given Docket ID.
 <body id="api"></body>
