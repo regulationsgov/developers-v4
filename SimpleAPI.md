@@ -38,10 +38,10 @@ This call is similar to the previous but allows the user to modify the results b
 Complex queries can be made by combining multiple actions and/or parameters.  However, only one sort will be applied and a page number and size should each only be provided once per query.
 
 ### Examples
-* <span id="docExample1">{{ page.organization-api-url }}/api/documents?filter[agencyId]=EPA</span><button onclick="copyTextFunction('docExample1')">Copy</button>
-* {{ page.organization-api-url }}/api/documents?filter[searchTerm]=Water
-* {{ page.organization-api-url }}/api/documents?filter[searchTerm]=Air&filter[searchTerm]=Pollution
-* {{ page.organization-api-url }}/api/documents?filter[withinCommentPeriod]=true&filter[documentType]=Notice&sort=-postedDate&page[size]=50&page[number]=10
+* <span id="documentExample1">{{ page.organization-api-url }}/api/documents?filter[agencyId]=EPA</span> <button onclick="copyTextFunction('documentExample1')">Copy</button>
+* <span id="documentExample2">{{ page.organization-api-url }}/api/documents?filter[searchTerm]=Water</span> <button onclick="copyTextFunction('documentExample2')">Copy</button>
+* <span id="documentExample3">{{ page.organization-api-url }}/api/documents?filter[searchTerm]=Air&filter[searchTerm]=Pollution</span> <button onclick="copyTextFunction('documentExample3')">Copy</button>
+* <span id="documentExample4">{{ page.organization-api-url }}/api/documents?filter[withinCommentPeriod]=true&filter[documentType]=Notice&sort=-postedDate&page[size]=50&page[number]=10</span> <button onclick="copyTextFunction('documentExample4')">Copy</button>
 
 **GET** `{{ page.organization-api-url }}/api/documentdetails/{Document ID}`
 
@@ -71,10 +71,10 @@ This call is similar to the previous but allows the user to modify the results b
 Complex queries can be made by combining multiple actions and/or parameters. However, only one sort will be applied and a page number and size should each only be provided once per query.
 
 ### Examples
-* {{ page.organization-api-url }}/api/dockets?filter[agencyId]=EPA
-* {{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Water
-* {{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Air&filter[searchTerm]=Pollution
-* {{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Farming&filter[docketType]=Nonrulemaking&sort=title&page[size]=50&page[number]=10
+* <span id="docketExample1">{{ page.organization-api-url }}/api/dockets?filter[agencyId]=EPA</span> <button onclick="copyTextFunction('docketExample1')">Copy</button>
+* <span id="docketExample2">{{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Water</span> <button onclick="copyTextFunction('docketExample2')">Copy</button>
+* <span id="docketExample3">{{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Air&filter[searchTerm]=Pollution</span> <button onclick="copyTextFunction('docketExample3')">Copy</button>
+* <span id="docketExample4">{{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Farming&filter[docketType]=Nonrulemaking&sort=title&page[size]=50&page[number]=10</span> <button onclick="copyTextFunction('docketExample4')">Copy</button>
 
 **GET** `{{ page.organization-api- url }}/api/docketdetails/{Docket ID}`
 
