@@ -219,7 +219,7 @@ Please see the [API]({{ site.baseurl }}/api/) documentation to learn how to make
 
 # Comments
 
-_**Notice:** Comment search results will always be brief. In order to view more details for the comment, a request for a single document should be made using the comment's ID as described in the [API]({{ site.baseurl }}/api/)._
+_**Notice:** Comment query results will always be brief. In order to view more details for the comment, a request for a single document should be made using the comment's ID as described in the [API]({{ site.baseurl }}/api/)._
 
 ```
 {
