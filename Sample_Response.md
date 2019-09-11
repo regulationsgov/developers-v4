@@ -16,7 +16,7 @@ Please see the [API]({{ site.baseurl }}/api/) documentation to learn how to make
 ```
 {
   "data": {
-    "id": "SRA-XD1-014-005",
+    "id": "SAJ-XD1-014-005",
     "type": "docketdetails",
     "attributes": {
       "displayProperties": [
@@ -36,7 +36,7 @@ Please see the [API]({{ site.baseurl }}/api/) documentation to learn how to make
             "firstName": "Bob",
             "lastName": "Smith",
             "phone": "555-867-5309",
-            "email": "bob.smith@sra.gfc",
+            "email": "bob.smith@saj.gfc",
             "mailingAddress": {
               "streetAddress": "33 Constellation Way",
               "city": "Orlando",
@@ -97,7 +97,7 @@ Please see the [API]({{ site.baseurl }}/api/) documentation to learn how to make
       ],
       "modifyDate": "2018-07-08T14:31:30Z",
       "dkAbstract": "Policy on Interpretation of the Phrase \"Abundance Determination\" in the Calamity Prevention Act's Definitions",
-      "agencyId": "SRA",
+      "agencyId": "SAJ",
       "program": null,
       "shortTitle": null,
       "subType2": null,
@@ -126,7 +126,7 @@ Please see the [API]({{ site.baseurl }}/api/) documentation to learn how to make
 ```
 {
   "data": {
-    "id": "SRA-020-007-0001",
+    "id": "SAJ-020-007-0001",
     "type": "documentdetails",
     "attributes": {
       "displayProperties": [
@@ -142,16 +142,16 @@ Please see the [API]({{ site.baseurl }}/api/) documentation to learn how to make
       "ombApproval": null,
       "frDocNum": null,
       "withdrawn": false,
-      "agencyId": "SRA",
+      "agencyId": "SAJ",
       "allowLateComments": false,
       "fileFormats": [
         {
-          "fileUrl": "https://downloads.regulations.gov/SRA-020-007-0001/content.pdf",
+          "fileUrl": "https://downloads.regulations.gov/SAJ-020-007-0001/content.pdf",
           "format": "pdf",
           "size": 161343
         }
       ],
-      "docketId": "SRA-020-007",
+      "docketId": "SAJ-020-007",
       "originalDocumentId": null,
       "exhibitLocation": null,
       "restrictReason": null,
@@ -212,5 +212,29 @@ Please see the [API]({{ site.baseurl }}/api/) documentation to learn how to make
       "effectiveDate": null
     }
   }
+}
+```
+
+---
+
+# Comments
+
+_**Notice:** Comment search results will always be brief. In order to view more details for the comment, a request for a single document should be made using the comment's ID as described in the [API]({{ site.baseurl }}/api/)._
+
+```
+{
+  "data": [
+    {
+      "id": "SAJ-020-007-0999",
+      "type": "comments",
+      "attributes": {
+        "documentType": "Public Submission",
+        "withdrawn": false,
+        "agencyId": "SAJ",
+        "title": "Comment Submitted by Rebecca Jones",
+        "postedDate": "2018-10-20T14:25:33Z"
+      }
+    }
+  ]
 }
 ```

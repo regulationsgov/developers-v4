@@ -11,45 +11,7 @@ Please see the [Response Models]({{ site.baseurl }}/response/) to understand mor
 
 ---
 
-# Document Calls
-
-**GET** `{{ page.organization-api-url }}/api/documents`
-
-This call returns a query of all documents with the default sorting and pagination settings.
-
-**GET** `{{ page.organization-api-url }}/api/documents?{Action}[{Parameter}][{Parameter Modifier}]={Value}`
-
-This call is similar to the previous but allows the user to modify the results by utilizing any of the following query parameters:
-
-| Action | Parameter| Description |
-|---|---|---|
-| filter | agencyId	| Filters results for the agency acronym specified in the value. |
-|| commentEndDate | Filters results relative to the comment end date.  The value must be formatted as `MM-dd-yyyy`.<br/><br/> Omission of a parameter modifier will match results to the exact date provided, otherwise, one of the parameter modifiers below may be used: <br/> `ge` - greater than or equal <br/> `le` - less than or equal |
-|| docketId | Filters results on the specified docket ID. |
-|| documentType | Filters results on the specified document type. |
-|| searchTerm | Filters results on the given term. |
-|| postedDate | Filters results relative to the posted date.  The value must be formatted as `MM-dd-yyyy`.<br/><br/> Omission of a parameter modifier will match results to the exact date provided, otherwise, one of the parameter modifiers below may be used: <br/> `ge` - greater than or equal <br/> `le` - less than or equal |
-|| subtype | Filters results on the supplied document subtype |
-|| withinCommentPeriod | Filters results for documents that are open for comment by setting the value to `true`. <br/><br/> _`False` is not an acceptable value for this parameter, hence it should be removed when not being used._ |
-| sort | (none) | Sorts the results on the field specified in the value.  The default behavior will sort the results in ascending order; to sort in descending order, prepend a minus sign to the value. <br/><br/> Supported values are `commentEndDate`, `postedDate`, and `title`. |
-| page | number | Specifies the number for the page of results that will be returned from the query. <br/><br/> Acceptable values are numerical between, and including, 1 and 20. |
-|| size | Specifies the size per page of results that will be returned from the query. <br/><br/> Acceptable values are numerical between, and including, 5 and 250. |
-
-Complex queries can be made by combining multiple actions and/or parameters.  However, only one sort will be applied and a page number and size should each only be provided once per query.
-
-### Examples
-* <span id="documentExample1">{{ page.organization-api-url }}/api/documents?filter[agencyId]=EPA</span> <button onclick="copyTextFunction('documentExample1')">Copy</button>
-* <span id="documentExample2">{{ page.organization-api-url }}/api/documents?filter[searchTerm]=Water</span> <button onclick="copyTextFunction('documentExample2')">Copy</button>
-* <span id="documentExample3">{{ page.organization-api-url }}/api/documents?filter[searchTerm]=Air&filter[searchTerm]=Pollution</span> <button onclick="copyTextFunction('documentExample3')">Copy</button>
-* <span id="documentExample4">{{ page.organization-api-url }}/api/documents?filter[withinCommentPeriod]=true&filter[documentType]=Notice&sort=-postedDate&page[size]=50&page[number]=10</span> <button onclick="copyTextFunction('documentExample4')">Copy</button>
-
-**GET** `{{ page.organization-api-url }}/api/documentdetails/{Document ID}`
-
-Obtains the information for the document with the given Document ID.
-
----
-
-# Docket Calls
+# Docket Requests
 
 **GET** `{{ page.organization-api-url }}/api/dockets`
 
@@ -79,6 +41,75 @@ Complex queries can be made by combining multiple actions and/or parameters. How
 **GET** `{{ page.organization-api- url }}/api/docketdetails/{Docket ID}`
 
 Obtains the information for the docket with the given docket ID.
+
+---
+
+# Document Requests
+
+**GET** `{{ page.organization-api-url }}/api/documents`
+
+This call returns a query of all documents with the default sorting and pagination settings.
+
+**GET** `{{ page.organization-api-url }}/api/documents?{Action}[{Parameter}][{Parameter Modifier}]={Value}`
+
+This call is similar to the previous but allows the user to modify the results by utilizing any of the following query parameters:
+
+| Action | Parameter| Description |
+|---|---|---|
+| filter | agencyId	| Filters results for the agency acronym specified in the value. |
+|| commentEndDate | Filters results relative to the comment end date.  The value must be formatted as `MM-dd-yyyy`.<br/><br/> Omission of a parameter modifier will match results to the exact date provided, otherwise, one of the parameter modifiers below may be used: <br/> `ge` - greater than or equal <br/> `le` - less than or equal |
+|| docketId | Filters results on the specified docket ID. |
+|| documentType | Filters results on the specified document type. |
+|| searchTerm | Filters results on the given term. |
+|| postedDate | Filters results relative to the posted date.  The value must be formatted as `MM-dd-yyyy`.<br/><br/> Omission of a parameter modifier will match results to the exact date provided, otherwise, one of the parameter modifiers below may be used: <br/> `ge` - greater than or equal <br/> `le` - less than or equal |
+|| subtype | Filters results on the supplied document subtype |
+|| withinCommentPeriod | Filters results for documents that are open for comment by setting the value to `true`. <br/><br/> _`False` is not an acceptable value for this parameter, hence it should be removed when not being used._ |
+| sort | (none) | Sorts the results on the field specified in the value.  The default behavior will sort the results in ascending order; to sort in descending order, prepend a minus sign to the value. <br/><br/> Supported values are `commentEndDate`, `postedDate`, and `title`. |
+| page | number | Specifies the number for the page of results that will be returned from the query. <br/><br/> Acceptable values are numerical between, and including, 1 and 20. |
+|| size | Specifies the size per page of results that will be returned from the query. <br/><br/> Acceptable values are numerical between, and including, 5 and 250. |
+
+Complex queries can be made by combining multiple actions and/or parameters.  However, only one sort will be applied and a page number and size should each only be provided once per query.
+
+### Examples
+* <span id="documentExample1">{{ page.organization-api-url }}/api/documents?filter[agencyId]=EPA</span> <button onclick="copyTextFunction('documentExample1')">Copy</button>
+* <span id="documentExample2">{{ page.organization-api-url }}/api/documents?filter[searchTerm]=Water</span> <button onclick="copyTextFunction('documentExample2')">Copy</button>
+* <span id="documentExample3">{{ page.organization-api-url }}/api/documents?filter[searchTerm]=Air&filter[searchTerm]=Pollution</span> <button onclick="copyTextFunction('documentExample3')">Copy</button>
+* <span id="documentExample4">{{ page.organization-api-url }}/api/documents?filter[commentEndDate][ge]=01-01-2019&filter[commentEndDate][le]=01-31-2019</span> <button onclick="copyTextFunction('documentExample4')">Copy</button>
+* <span id="documentExample5">{{ page.organization-api-url }}/api/documents?filter[withinCommentPeriod]=true&filter[documentType]=Notice&sort=-postedDate&page[size]=50&page[number]=10</span> <button onclick="copyTextFunction('documentExample5')">Copy</button>
+
+**GET** `{{ page.organization-api-url }}/api/documentdetails/{Document ID}`
+
+Obtains the information for the document with the given Document ID.
+
+---
+
+# Comment Requests
+
+**GET** `{{ page.organization-api-url }}/api/comments`
+
+This call returns a query of comments with the default sorting and pagination settings.
+
+**GET** `{{ page.organization-api-url }}/api/comments?{Action}[{Parameter}][{Parameter Modifier}]={Value}`
+
+This call is similar to the previous but allows the user to modify the results by utilizing any of the following query parameters:
+
+| Action | Parameter| Description |
+|---|---|---|
+| filter | agencyId	| Filters results for the agency acronym specified in the value. |
+|| commentOnId | Filters results for comments that have been made toward the document with the given unique Regulations.gov ID. This value corresponds with the `objectId` of the document in the [Response Models]({{ site.baseurl }}/response/). |
+|| searchTerm | Filters results on the given term. |
+|| postedDate | Filters results relative to the posted date.  The value must be formatted as `MM-dd-yyyy`.<br/><br/> Omission of a parameter modifier will match results to the exact date provided, otherwise, one of the parameter modifiers below may be used: <br/> `ge` - greater than or equal <br/> `le` - less than or equal |
+| sort | (none) | Sorts the results on the field specified in the value.  The default behavior will sort the results in ascending order; to sort in descending order, prepend a minus sign to the value. <br/><br/> Currently, the only supported value is `postedDate`. |
+| page | number | Specifies the number for the page of results that will be returned from the query. <br/><br/> Acceptable values are numerical between, and including, 1 and 20. |
+|| size | Specifies the size per page of results that will be returned from the query. <br/><br/> Acceptable values are numerical between, and including, 5 and 250. |
+
+### Examples
+* <span id="commentExample1">{{ page.organization-api-url }}/api/comments?filter[agencyId]=EPA</span> <button onclick="copyTextFunction('commentExample1')">Copy</button>
+* <span id="commentExample2">{{ page.organization-api-url }}/api/comments?filter[searchTerm]=Water</span> <button onclick="copyTextFunction('commentExample2')">Copy</button>
+* <span id="commentExample3">{{ page.organization-api-url }}/api/comments?filter[searchTerm]=Air&filter[postedDate][ge]=01-01-2019</span> <button onclick="copyTextFunction('commentExample3')">Copy</button>
+* <span id="commentExample4">{{ page.organization-api-url }}/api/comments?&filter[searchTerm]=Pollution&sort=-postedDate&page[size]=50&page[number]=10</span> <button onclick="copyTextFunction('commentExample4')">Copy</button>
+
+
 <body id="api"></body>
 
 <script type="text/javascript">
