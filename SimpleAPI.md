@@ -38,7 +38,7 @@ This call is similar to the previous but allows the user to modify the results b
 Complex queries can be made by combining multiple actions and/or parameters.  However, only one sort will be applied and a page number and size should each only be provided once per query.
 
 ### Examples
-* {{ page.organization-api-url }}/api/documents?filter[agencyId]=EPA
+* <span id="docExample1">{{ page.organization-api-url }}/api/documents?filter[agencyId]=EPA</span><button onclick="copyTextFunction('docExample1')">Copy</button>
 * {{ page.organization-api-url }}/api/documents?filter[searchTerm]=Water
 * {{ page.organization-api-url }}/api/documents?filter[searchTerm]=Air&filter[searchTerm]=Pollution
 * {{ page.organization-api-url }}/api/documents?filter[withinCommentPeriod]=true&filter[documentType]=Notice&sort=-postedDate&page[size]=50&page[number]=10
@@ -76,7 +76,18 @@ Complex queries can be made by combining multiple actions and/or parameters. How
 * {{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Air&filter[searchTerm]=Pollution
 * {{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Farming&filter[docketType]=Nonrulemaking&sort=title&page[size]=50&page[number]=10
 
-**GET** `{{ page.organization-api-url }}/api/docketdetails/{Docket ID}`
+**GET** `{{ page.organization-api- url }}/api/docketdetails/{Docket ID}`
 
 Obtains the information for the docket with the given Docket ID.
 <body id="api"></body>
+
+<script type="text/javascript">
+function copyTextFunction( id ) {
+	var selectText = document.getElementById(id);
+	var range = document.createRange();
+	range.selectNode(selectText);
+	window.getSelection().addRange(range);
+	document.execCommand('Copy');
+	window.getSelection().removeAllRanges();
+}
+</script>
