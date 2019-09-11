@@ -25,7 +25,7 @@ This call is similar to the previous but allows the user to modify the results b
 |---|---|---|
 | filter | agencyId	| Filters results for the agency acronym specified in the value. |
 || commentEndDate | Filters results relative to the comment end date.  The value must be formatted as `MM-dd-yyyy`.<br/><br/> Omission of a parameter modifier will match results to the exact date provided, otherwise, one of the parameter modifiers below may be used: <br/> `ge` - greater than or equal <br/> `le` - less than or equal |
-|| docketId | Filters results on the specified Docket ID. |
+|| docketId | Filters results on the specified docket ID. |
 || documentType | Filters results on the specified document type. |
 || searchTerm | Filters results on the given term. |
 || postedDate | Filters results relative to the posted date.  The value must be formatted as `MM-dd-yyyy`.<br/><br/> Omission of a parameter modifier will match results to the exact date provided, otherwise, one of the parameter modifiers below may be used: <br/> `ge` - greater than or equal <br/> `le` - less than or equal |
@@ -78,7 +78,7 @@ Complex queries can be made by combining multiple actions and/or parameters. How
 
 **GET** `{{ page.organization-api- url }}/api/docketdetails/{Docket ID}`
 
-Obtains the information for the docket with the given Docket ID.
+Obtains the information for the docket with the given docket ID.
 <body id="api"></body>
 
 <script type="text/javascript">
