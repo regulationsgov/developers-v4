@@ -238,6 +238,18 @@ The file format object contains information about a content file and its propert
 
 ---
 
+# Comments
+
+| Property | Type | Description |
+| --- | --- | --- |
+| documentType | String | The type of document.  For a comment, this value should always be `Public Submission`. |
+| withdrawn | Boolean | Conveys if the comment is withdrawn. |
+| agencyId | String | The acronym used to abbreviate the name of the agency associated with the comment. |
+| title | String | The title of the comment. |
+| postedDate | String | The date that the comment was posted to the system.<br/><br/>The date is formatted as ISO 8601 with an offset such as `2019-01-20T13:15:45+01:00`. |
+
+---
+
 # Common
 
 <a name="display_properties"></a>
