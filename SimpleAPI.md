@@ -104,7 +104,7 @@ This call is similar to the previous but allows the user to modify the results b
 || size | Specifies the size per page of results that will be returned from the query. <br/><br/> Acceptable values are numerical between, and including, 5 and 250. |
 
 ### Examples
-* <span id="commentExample1">{{ page.organization-api-url }}/api/comments?filter[agencyId]=EPA</span> <button onclick="copyTextFunction('commentExample1')">Copy</button>
+* <span id="commentExample1">{{ page.organization-api-url }}/api/comments?filter[agencyId]=EPA</span> (<button onclick="copyTextFunction('commentExample1')" class="copy-text">Copy</button>)
 * <span id="commentExample2">{{ page.organization-api-url }}/api/comments?filter[searchTerm]=Water</span> <button onclick="copyTextFunction('commentExample2')">Copy</button>
 * <span id="commentExample3">{{ page.organization-api-url }}/api/comments?filter[searchTerm]=Air&filter[postedDate][ge]=01-01-2019</span> <button onclick="copyTextFunction('commentExample3')">Copy</button>
 * <span id="commentExample4">{{ page.organization-api-url }}/api/comments?&filter[searchTerm]=Pollution&sort=-postedDate&page[size]=50&page[number]=10</span> <button onclick="copyTextFunction('commentExample4')">Copy</button>

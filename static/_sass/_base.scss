@@ -945,6 +945,23 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding:0;
 }
 
+button.copy-text {
+    border-bottom: 1px dotted $link-color;
+    color: $link-color;
+    text-decoration: none;
+    background-color: none;
+    border: none;
+    padding: 0;
+}
+
+button.copy-text:hover {
+    border-bottom: 1px solid #7eb8dd;
+    color: #7eb8dd;
+    text-decoration: none;
+    background-color: none;
+    border: none;
+    padding: 0;
+}
 
 /* QUOTES */
 
