@@ -33,10 +33,10 @@ This call is similar to the previous but allows the user to modify the results b
 Complex queries can be made by combining multiple actions and/or parameters. However, only one sort will be applied and a page number and size should each only be provided once per query.
 
 ### Examples
-* <span id="docketExample1">{{ page.organization-api-url }}/api/dockets?filter[agencyId]=EPA</span> <button onclick="copyTextFunction('docketExample1')">Copy</button>
-* <span id="docketExample2">{{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Water</span> <button onclick="copyTextFunction('docketExample2')">Copy</button>
-* <span id="docketExample3">{{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Air&filter[searchTerm]=Pollution</span> <button onclick="copyTextFunction('docketExample3')">Copy</button>
-* <span id="docketExample4">{{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Farming&filter[docketType]=Nonrulemaking&sort=title&page[size]=50&page[number]=10</span> <button onclick="copyTextFunction('docketExample4')">Copy</button>
+* <span id="docketExample1">{{ page.organization-api-url }}/api/dockets?filter[agencyId]=EPA</span> (<button onclick="copyTextFunction('docketExample1')" class="copy-text">Copy</button>)
+* <span id="docketExample2">{{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Water</span> (<button onclick="copyTextFunction('docketExample2')" class="copy-text">Copy</button>)
+* <span id="docketExample3">{{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Air&filter[searchTerm]=Pollution</span> (<button onclick="copyTextFunction('docketExample3')" class="copy-text">Copy</button>)
+* <span id="docketExample4">{{ page.organization-api-url }}/api/dockets?filter[searchTerm]=Farming&filter[docketType]=Nonrulemaking&sort=title&page[size]=50&page[number]=10</span> (<button onclick="copyTextFunction('docketExample4')" class="copy-text">Copy</button>)
 
 **GET** `{{ page.organization-api- url }}/api/docketdetails/{Docket ID}`
 
@@ -71,11 +71,11 @@ This call is similar to the previous but allows the user to modify the results b
 Complex queries can be made by combining multiple actions and/or parameters.  However, only one sort will be applied and a page number and size should each only be provided once per query.
 
 ### Examples
-* <span id="documentExample1">{{ page.organization-api-url }}/api/documents?filter[agencyId]=EPA</span> <button onclick="copyTextFunction('documentExample1')">Copy</button>
-* <span id="documentExample2">{{ page.organization-api-url }}/api/documents?filter[searchTerm]=Water</span> <button onclick="copyTextFunction('documentExample2')">Copy</button>
-* <span id="documentExample3">{{ page.organization-api-url }}/api/documents?filter[searchTerm]=Air&filter[searchTerm]=Pollution</span> <button onclick="copyTextFunction('documentExample3')">Copy</button>
-* <span id="documentExample4">{{ page.organization-api-url }}/api/documents?filter[commentEndDate][ge]=01-01-2019&filter[commentEndDate][le]=01-31-2019</span> <button onclick="copyTextFunction('documentExample4')">Copy</button>
-* <span id="documentExample5">{{ page.organization-api-url }}/api/documents?filter[withinCommentPeriod]=true&filter[documentType]=Notice&sort=-postedDate&page[size]=50&page[number]=10</span> <button onclick="copyTextFunction('documentExample5')">Copy</button>
+* <span id="documentExample1">{{ page.organization-api-url }}/api/documents?filter[agencyId]=EPA</span> (<button onclick="copyTextFunction('documentExample1')" class="copy-text">Copy</button>)
+* <span id="documentExample2">{{ page.organization-api-url }}/api/documents?filter[searchTerm]=Water</span> (<button onclick="copyTextFunction('documentExample2')" class="copy-text">Copy</button>)
+* <span id="documentExample3">{{ page.organization-api-url }}/api/documents?filter[searchTerm]=Air&filter[searchTerm]=Pollution</span> (<button onclick="copyTextFunction('documentExample3')" class="copy-text">Copy</button>)
+* <span id="documentExample4">{{ page.organization-api-url }}/api/documents?filter[commentEndDate][ge]=01-01-2019&filter[commentEndDate][le]=01-31-2019</span> (<button onclick="copyTextFunction('documentExample4')" class="copy-text">Copy</button>)
+* <span id="documentExample5">{{ page.organization-api-url }}/api/documents?filter[withinCommentPeriod]=true&filter[documentType]=Notice&sort=-postedDate&page[size]=50&page[number]=10</span> (<button onclick="copyTextFunction('documentExample5')" class="copy-text">Copy</button>)
 
 **GET** `{{ page.organization-api-url }}/api/documentdetails/{Document ID}`
 
@@ -105,9 +105,9 @@ This call is similar to the previous but allows the user to modify the results b
 
 ### Examples
 * <span id="commentExample1">{{ page.organization-api-url }}/api/comments?filter[agencyId]=EPA</span> (<button onclick="copyTextFunction('commentExample1')" class="copy-text">Copy</button>)
-* <span id="commentExample2">{{ page.organization-api-url }}/api/comments?filter[searchTerm]=Water</span> <button onclick="copyTextFunction('commentExample2')">Copy</button>
-* <span id="commentExample3">{{ page.organization-api-url }}/api/comments?filter[searchTerm]=Air&filter[postedDate][ge]=01-01-2019</span> <button onclick="copyTextFunction('commentExample3')">Copy</button>
-* <span id="commentExample4">{{ page.organization-api-url }}/api/comments?&filter[searchTerm]=Pollution&sort=-postedDate&page[size]=50&page[number]=10</span> <button onclick="copyTextFunction('commentExample4')">Copy</button>
+* <span id="commentExample2">{{ page.organization-api-url }}/api/comments?filter[searchTerm]=Water</span> (<button onclick="copyTextFunction('commentExample2')" class="copy-text">Copy</button>)
+* <span id="commentExample3">{{ page.organization-api-url }}/api/comments?filter[searchTerm]=Air&filter[postedDate][ge]=01-01-2019</span> (<button onclick="copyTextFunction('commentExample3')" class="copy-text">Copy</button>)
+* <span id="commentExample4">{{ page.organization-api-url }}/api/comments?&filter[searchTerm]=Pollution&sort=-postedDate&page[size]=50&page[number]=10</span> (<button onclick="copyTextFunction('commentExample4')" class="copy-text">Copy</button>)
 
 
 <body id="api"></body>
